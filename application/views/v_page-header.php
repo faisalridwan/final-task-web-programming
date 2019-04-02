@@ -182,7 +182,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-5 ws-home-check-left">
                         <div class="ws-home-check-title-left pt-4">
-                            <img class="check-fee-icon" src="assets/img/cek-ongkir@2x.png" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
+                            <img class="check-fee-icon" src="<?= base_url('assets/img/cek-ongkir@2x.png') ?>" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
                         </div>
 
                         <form action="#" class="ws-form form-horizontal check-form" method="post" accept-charset="utf-8">
