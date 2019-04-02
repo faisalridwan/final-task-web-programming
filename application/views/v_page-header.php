@@ -393,7 +393,7 @@
         </div>
         <div class="__sub-title text-center">
             <span>
-                SiCepat berkomitmen menjadi partner terpercaya di seluruh Indonesia. Inilah 10 alasan tepat untuk memilih SiCepat....
+                SiCepat berkomitmen menjadi partner terpercaya di seluruh Indonesia. Inilah 10 alasan tepat untuk memilih SiCepat.......
             </span>
         </div>
     </div>
