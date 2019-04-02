@@ -1,0 +1,487 @@
+section {
+	min-height: 200px;
+}
+
+div {
+	display: block;
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+}
+
+form {
+	margin-block-end: 1em;
+	display: block;
+	margin-top: 0em;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ws-header-container .navbar li.active a {
+	color: #fff;
+}
+
+.ws-header-container .navbar a {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+.btn-join {
+	border-radius: 3px;
+	text-align: center;
+	background: #d0021b;
+	border-color: #d0021b;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.56;
+	letter-spacing: 0.5px;
+	color: #fff;
+	padding: 18px 48px;
+}
+
+.btn-white-red {
+	width: 100%;
+	border-radius: 3px;
+	background-color: #ffffff;
+	text-align: center;
+	border-color: #d0021b;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0.5px;
+	color: #d0021b;
+	padding: 17px 26px 17px 25px;
+}
+
+.btn-show-service {
+	border-radius: 3px;
+	text-align: center;
+	background: #d0021b;
+	border-color: #d0021b;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.56;
+	letter-spacing: 0.5px;
+	color: #fff;
+	padding: 18px 48px;
+}
+
+.ws-join-left {
+	padding-top: 57px;
+	padding-bottom: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.11;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.ws-join-right {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.check-fee-icon {
+	width: 39px;
+	height: 25px;
+}
+
+.check-awb-icon {
+	width: 32px;
+	height: 31px;
+}
+
+.__title {
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	padding-top: 77px;
+	padding-bottom: 22px;
+}
+
+.__sub-title {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #676767;
+	margin-bottom: 70px;
+}
+
+.ws-home-page .ws-home-check {
+	background-color: #f9fafb;
+}
+
+.ws-home-check-title-left {
+	padding-top: 67;
+	padding-bottom: 30px;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.ws-home-check-title-right {
+	padding-top: 67;
+	padding-bottom: 30px;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.ws-home-check-left label {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.ws-home-check-right .label-textarea {
+	font-weight: normal;
+	font-size: 14px;
+	font-style: italic;
+	color: #C4C4C4;
+	padding: 6px;
+	position: absolute;
+	top: 0;
+}
+
+.ws-home-check-right textarea {
+	height: 150px;
+	max-height: 150px;
+	border-radius: 3px;
+	border: 1px solid #d2d6de;
+}
+
+.ws-home-check-right {
+	margin-bottom: 35px;
+}
+
+.ws-home-check-left .fare-result {
+	margin-top: 35px;
+}
+
+.ws-home-check-left .check-form input {
+	height: 45px;
+	border-radius: 3px;
+}
+
+.ws-home-check-left .btn-check {
+	background-color: #f1f2f4;
+	border: 1px solid #c1c1c1;
+	margin-top: 13px;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.56;
+	padding: 18px 60px;
+	border-radius: 3px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.ws-home-check-right .btn-track {
+	background-color: #f1f2f4;
+	border: 1px solid #c1c1c1;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.56;
+	padding: 18px 60px;
+	border-radius: 3px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.input-group-addon,
+.input-group-btn {
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.ws-home-check-left .check-form .input-group-addon {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.input-group-addon {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.input-group .input-group-addon {
+	border-radius: 0;
+	border-color: #d2d6de;
+	background-color: #fff;
+}
+
+.input-group-addon:last-child {
+	border-left: 0;
+}
+
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+	display: table-cell;
+}
+
+.ws-home-check-right .ws-home-notes {
+	margin-top: 20px;
+	margin-bottom: 45px;
+	color: #283842;
+	text-align: justify;
+	z-index: 344;
+	font-weight: 400;
+	min-height: 20px;
+	position: relative;
+}
+
+.form-group {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.ws-home-page .ws-home-service {
+	background: #f9fafb;
+	padding-bottom: 70px;
+}
+
+.item-service {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.ws-home-page .ws-home-service .item-service a {
+	padding: 0 10px;
+}
+
+a {
+	color: #3c8dbc;
+	background-color: transparent;
+}
+
+.service-item-title {
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.28;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+img.service-img-top {
+	position: absolute;
+	top: -80px;
+	right: 75px;
+}
+
+.service-item-line {
+	width: 40px;
+	height: 3px;
+	background-color: #d0021b;
+	margin: 0 auto;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+.service-item-title2 {
+	font-size: 13px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: #929292;
+}
+
+.item-service img {
+	width: 108px;
+	height: 117px;
+	margin-bottom: 60px;
+}
+
+.item-service .service-item {
+	padding-top: 40px;
+	background: #fff;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	height: 188px;
+	width: 250px;
+	max-width: 250px;
+	max-height: 188px;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.ws-footer-page {
+	background-color: #283842;
+}
+
+.ws-footer-page .ws-footer-top {
+	background-color: #cd2028;
+	color: #FFFFFF;
+	padding-top: 40px;
+}
+
+.ws-store-title {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ws-footer-menu {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ws-store-menu {
+	margin-bottom: 20px;
+}
+
+.store-icon {
+	width: 118px;
+}
+
+.footer-icon {
+	width: 21px;
+}
+
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+.ws-menu-list {
+	font-size: 12px;
+	font-weight: normal;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.ws-menu-list li {
+	margin-bottom: 15px;
+}
+
+.ws-menu-list li a {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+}
+
+.contact-address-list td {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+.ws-footer-divider {
+	min-width: 100%;
+	background: #fff;
+	opacity: 0.15;
+	min-height: 2px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
+bottom {
+	color: #FFFFFF;
+	padding-bottom: 35px;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
