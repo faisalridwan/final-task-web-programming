@@ -58,205 +58,72 @@
     </nav>
 
     <!-- MAIN CONTENT -->
-
-    <div class="ws-main-content pt-5">
-        <div class="ws-deliveryfee-page">
-            <div class="deliveryfee-title text-center">
-                <div class="container">
-                    <img class="check-fee-icon mr-3" src="<?= base_url('assets/img/cek-ongkir@2x.png'); ?>"> Cek Tarif
-                </div>
-            </div>
-
-            <div class="content pt-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col md-3">
-                            <div class="col md-6">
-                                <div class="ws-home-check-left">
-                                    <form action="#" class="ws-form form-horizontal check-form" method="post" accept-charset="utf-8">
-                                        <div class="form-group">
-                                            <label class=" col-sm-2  control-label  ">Asal</label> 
-                                            <div class="col-sm-10">
-                                                <input id="origin" type="text" value="" name="origin" class="form-control" placeholder="Select province" autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <input id="origin_code" type="hidden" value="" name="origin_code" class="form-control">
-
-                                        <div class="form-group">
-                                            <label class=" col-sm-2  control-label  ">Tujuan</label>
-                                            <div class="col-sm-10">
-                                                <input id="destination" type="text" value="" name="destination" class="form-control" placeholder="Select province" autocomplete="off">
-                                            </div>
-                                        </div>  
-                                        <input id="destination_code" type="hidden" value="" name="destination_code" class="form-control">
-
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Berat</label>
-                                                <div class="col-sm-10">
-                                                    <div class="input-group">
-                                                        <input type="text" name="weight" class="form-control" placeholder="00">
-                                                        <div class="input-group-addon">Kg</div>
-                                                    </div>
-                                                </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Dimensi</label>
-                                            <div class="col-sm-10">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="input-group">
-                                                            <input type="text" name="length" class="form-control" placeholder="L">
-                                                            <div class="input-group-addon pr-4 pt-3">cm</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="input-group">
-                                                            <input type="text" name="width" class="form-control" placeholder="W">
-                                                            <div class="input-group-addon pr-4 pt-3">cm</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="input-group">
-                                                            <input type="text" name="height" class="form-control" placeholder="H">
-                                                            <div class="input-group-addon pr-4 pt-3">cm</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12 text-right">
-                                                <a id="btn-check" name="btn-check" class=" btn btn-check" href="javascript:void(0)">Cek Harga</a>
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                    <div id="fare-list" class="fare-result"></div>
-                                        <script type="text/javascript">
-                                            var countries = [{
-                                                    "value": "Jakarta",
-                                                    "data": "CGK"
-                                                },
-                                                {
-                                                    "value": "Tangerang",
-                                                    "data": "TGR"
-                                                },
-                                                {
-                                                    "value": "Bekasi",
-                                                    "data": "BKI"
-                                                },
-                                                {
-                                                    "value": "Depok",
-                                                    "data": "DPK"
-                                                },
-                                                {
-                                                    "value": "Bogor",
-                                                    "data": "BOO"
-                                                },
-                                                {
-                                                    "value": "Semarang",
-                                                    "data": "SRG"
-                                                },
-                                                {
-                                                    "value": "Surabaya",
-                                                    "data": "SUB"
-                                                },
-                                                {
-                                                    "value": "Medan",
-                                                    "data": "MES"
-                                                },
-                                                {
-                                                    "value": "Bandung",
-                                                    "data": "BDO"
-                                                },
-                                                {
-                                                    "value": "Yogyakarta",
-                                                    "data": "JOG"
-                                                },
-                                                {
-                                                    "value": "Batam",
-                                                    "data": "BTH"
-                                                },
-                                                {
-                                                    "value": "Cilegon",
-                                                    "data": "CLG"
-                                                },
-                                                {
-                                                    "value": "Denpasar",
-                                                    "data": "DPS"
-                                                },
-                                                {
-                                                    "value": "Malang",
-                                                    "data": "MLG"
-                                                },
-                                                {
-                                                    "value": "Solo",
-                                                    "data": "SOC"
-                                                },
-                                                {
-                                                    "value": "Jember",
-                                                    "data": "JBR"
-                                                },
-                                                {
-                                                    "value": "Jepara",
-                                                    "data": "JPR"
-                                                },
-                                                {
-                                                    "value": "Magelang",
-                                                    "data": "MGL"
-                                                },
-                                                {
-                                                    "value": "Sukabumi",
-                                                    "data": "SMI"
-                                                },
-                                                {
-                                                    "value": "Banjarmasin",
-                                                    "data": "BDJ"
-                                                },
-                                                {
-                                                    "value": "Palembang",
-                                                    "data": "PLM"
-                                                },
-                                                {
-                                                    "value": "Pekanbaru",
-                                                    "data": "PKU"
-                                                },
-                                                {
-                                                    "value": "Balikpapan",
-                                                    "data": "BPN"
-                                                },
-                                                {
-                                                    "value": "Makassar",
-                                                    "data": "UPG"
-                                                },
-                                                {
-                                                    "value": "Madiun",
-                                                    "data": "MDN"
-                                                },
-                                                {
-                                                    "value": "Kediri",
-                                                    "data": "KDR"
-                                                }
-                                            ];
-                                        </script>
-                                    </div>
-
-                                </div>
-                                <div class="col md-3">
-                                
+    <div class="container " width=20%>
+    <form action="#" class="ws-form form-horizontal check-form" method="post" accept-charset="utf-8">
+                            <div class="form-group ">
+                                <label class=" col-sm-2  control-label  ">Asal</label>
+                                <div class="col-sm-10">
+                                    <input id="origin" type="text" value="" name="origin" class="form-control px-2" placeholder="Select province" autocomplete="off">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                        <img class="img-bottom mt-5" src="<?= base_url('assets/img/background2.png'); ?>">
-                </div>
-            </div>
-        </div>
+                            <input id="origin_code" type="hidden" value="" name="origin_code" class="form-control">
+
+                            <div class="form-group ">
+                                <label class=" col-sm-2  control-label  ">Tujuan</label>
+                                <div class="col-sm-10">
+                                    <input id="destination" type="text" value="" name="destination" class="form-control" placeholder="Select province" autocomplete="off">
+                                </div>
+                            </div>
+                            <input id="destination_code" type="hidden" value="" name="destination_code" class="form-control">
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Berat</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group">
+                                        <input type="text" name="weight" class="form-control" placeholder="00">
+                                        <div class="input-group-addon pr-4 pt-3">Kg</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Dimensi</label>
+                                <div class="col-sm-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="input-group">
+                                                <input type="text" name="length" class="form-control" placeholder="L">
+                                                <div class="input-group-addon pr-4 pt-3">cm</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="input-group">
+                                                <input type="text" name="width" class="form-control" placeholder="W">
+                                                <div class="input-group-addon pr-4 pt-3">cm</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="input-group">
+                                                <input type="text" name="height" class="form-control" placeholder="H">
+                                                <div class="input-group-addon pr-4 pt-3">cm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 text-right"><a id="btn-check" name="btn-check" class=" btn btn-check" href="javascript:void(0)">Cek Harga</a>
+                                </div>
+                            </div>
+                        </form>
     </div>
+
+    
+
+                                    
     
 
     <!-- FOOTER  -->
