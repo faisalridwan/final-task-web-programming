@@ -62,7 +62,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
-                    <form action="#" class="ws-form form-horizontal check-form " method="post" accept-charset="utf-8">
+                    <form action="#" class="ws-form form-horizontal check-form " method="post">
                         <div class="pt-5 text-center ">
                             <img class="check-fee-icon" src="<?= base_url('assets/img/cek-ongkir@2x.png') ?>" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
                         </div>
@@ -87,7 +87,8 @@
                                 <div class="col-sm-10">
                                     <div class="input-group">
                                         <input type="text" name="weight" class="form-control" placeholder="00">
-                                        <div class="input-group-addon pl-1 pr-1 pt-3">Kg</div>
+                                        <div class="input-group-prepend ">
+                                        <span class="input-group-text bg-white">Kg</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -99,21 +100,27 @@
                                         <div class="col-md-4">
                                             <div class="input-group">
                                                 <input type="text" name="length" class="form-control" placeholder="L">
-                                                <div class="input-group-addon pl-1 pt-3">cm</div>
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white">cm</span>
+
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="input-group">
                                                 <input type="text" name="width" class="form-control" placeholder="W">
-                                                <div class="input-group-addon pl-1 pt-3">cm</div>
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white">cm</span></div>
                                             </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="input-group">
                                                 <input type="text" name="height" class="form-control" placeholder="H">
-                                                <div class="input-group-addon pl-1 pt-3">cm</div>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-white">cm</span>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
