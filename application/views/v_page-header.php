@@ -12,7 +12,7 @@
     <title>SiCepat</title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="assets/css/header_style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/header_style.css'); ?>">
 
 </head>
 
@@ -48,10 +48,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-2">
-                <div class="">Hotline</div>
+            <div class="col-md-2 col-sm-2 hotilang">
+                <div class=" hotilang">Hotline</div>
                 <b>
-                    <div class=" text-danger">021-5020-0050</div>
+                    <div class=" text-danger hotilang">021-5020-0050</div>
                 </b>
             </div>
         </div>
@@ -81,10 +81,10 @@
                                     <div class="row mb-4 text-light">
                                         <h2><b>SICEPAT GO!</b></h2>
                                     </div>
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-2 text-light">
                                         SiCepat Go! adalah layanan pengiriman internasional yang bisa bikin bisnis kamu makin lancar, hemat, aman dan cepat sampai, karena SiCepat Go! memberikan : Layanan pick up GRATIS dengan berat per paket maksimal 70 kilogram, Ongkir hemat dengan tambahan diskon 10%, Jangkauan yang luas ke mancanegara* (agar bisnis kamu makin meluas) & Tracking paket kamu di www.sicepat.com Informasi lebih lengkap hubungi Hotline dan Sosial Media kami *Negara tujuan saat ini : seluruh benua Asia dan Australia
                                     </div>
-                                    <div class="row mb-4">
+                                    <div class="row mb-5">
                                         <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
@@ -99,12 +99,12 @@
                                     <div class="row mb-4 text-light">
                                         <h2><b>SICEPAT SYARIAH</b></h2>
                                     </div>
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-2 text-light">
                                         SiCepat Ekspres resmi bekerjasama dengan Dompet Dhuafa pada tanggal 1 November 2018. Bagi kamu member SiCepat Syariah yang bersedia menyumbangkan 2,5% dari potongan ongkir yang diterima, kini kamu lebih mudah untuk berbagi rejeki kepada pesantren & sekolah literasi Indonesia di wilayah Cilacap & Lombok melalui Dompet Dhuafa.
                                         Kirim barang, dapat berkah. Mari berbagi bersama ekspedisi bagi negeri
                                         Untuk informasi lebih lanjut silahkan hubungi melalui LINE : @sicepaT
                                     </div>
-                                    <div class="row mb-4">
+                                    <div class="row mb-5">
                                         <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
@@ -113,16 +113,16 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="<?= base_url('assets/img/3.png') ?>" class="d-block pt-5" width=80%>
+                                    <img src="<?= base_url('assets/img/3.png') ?>" class="d-block pt-5" width=70%>
                                 </div>
                                 <div class="col-lg-6 pt-5">
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-4 pb-2 text-light">
                                         <h2><b>SICEPAT KARGO</b></h2>
                                     </div>
                                     <div class="row mb-4 text-light">
                                         Layanan baru dari Sicepat Cargo dengan paket yang lebih banyak dengan harga yang lebih murah sebagai bentuk terima kasih kami kepada para Sahabat SiCepat yang selalu mendukung kami sebagai kiriman terpercaya bisnis Online Shop kamu. Dengan pengiriman minimal 5 kg dan saat ini hanya berlaku untuk wilayah JABODETABEK dan Bandung. SiCepat Cargo Semakin Besar Semakin Mudah. Hubungi Hotline atau sosial media kami untuk info lebih lanjut.
                                     </div>
-                                    <div class="row mb-4">
+                                    <div class="row mb-5">
                                         <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
@@ -134,13 +134,13 @@
                                     <img src="<?= base_url('assets/img/4.png') ?>" class="d-block pt-5" width=80%>
                                 </div>
                                 <div class="col-lg-6 pt-5">
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-4 pb-3 text-light">
                                         <h2><b>FREE PICK UP TANPA SYARAT MINIMAL</b></h2>
                                     </div>
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-4 pb-2 text-light">
                                         Tidak hanya cepat, kami juga sediakan pick up GRATIS untuk mempermudah jualan Online Shop kamu tanpa minimal paket. Tidak perlu lagi menumpuk dan mengantarkan barang, karena SiGesit kami yang akan melakukannya. Hubungi hotline atau sosial media kami untuk info lebih lanjut.
                                     </div>
-                                    <div class="row mb-4">
+                                    <div class="row mb-5">
                                         <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
@@ -155,10 +155,10 @@
                                     <div class="row mb-4 text-light">
                                         <h2><b>KIRIMAN CEPAT 15 JAM SAMPAI TANPA TAMBAHAN BIAYA APAPUN</b></h2>
                                     </div>
-                                    <div class="row mb-4 text-light">
+                                    <div class="row mb-5 pb-3 text-light">
                                         Kami kirim paket kamu hanya dalam 15 jam sampai dengan harga sama tanpa tambahan apapun. Hanya berlaku untuk Jabodetabek dan beberapa kota besar Indonesia.
                                     </div>
-                                    <div class="row mb-4">
+                                    <div class="row mb-5">
                                         <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>

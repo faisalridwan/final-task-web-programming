@@ -485,3 +485,25 @@ bottom {
 	line-height: normal;
 	letter-spacing: normal;
 }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.hotilang {
+		display: none;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.hotilang {
+		display: none;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.hotilang {
+		display: none;
+	}
+}
