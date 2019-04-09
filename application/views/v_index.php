@@ -12,7 +12,7 @@
     <title>SiCepat</title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/header_style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/index_style.css'); ?>">
 
 </head>
 
@@ -20,31 +20,31 @@
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo-header.png" width="150px;" class="main-logo img-responsive"></a>
+            <a class="navbar-brand" href="<?= base_url()?>"><img src="<?= base_url('assets/img/logo-header.png')?>" width="150px;" class="main-logo img-responsive"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <ul class="nav nav-pills">
-                        <li class="nav-item bg-danger active">
-                            <a class="nav-link  " href="#">HOME </a>
+                        <li class="nav-item">
+                            <a class="nav-link bg-danger active " href="<?= base_url(); ?>">HOME </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item  ">
                             <a class="nav-link" href="<?= base_url('Sicepat/ongkir'); ?>">ONGKIR </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICE </a>
+                            <a class="nav-link" href="<?= base_url('Sicepat/service'); ?>">SERVICE </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LOKASI </a>
+                            <a class="nav-link" href="<?= base_url('Sicepat/lokasi'); ?>">LOKASI </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT </a>
-                        </li>
+                            <a class="nav-link" href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
+                        </li
                     </ul>
                 </div>
             </div>
@@ -358,7 +358,7 @@
 
                     <div class="col-md-5 col-md-offset-2 ws-home-check-right">
                         <div class="ws-home-check-title-right pt-4">
-                            <img class="check-awb-icon" src="assets/img/location@2x.png" style="margin-right: 17px; margin-bottom: 4px;">Track Resi
+                            <img class="check-awb-icon" src="<?= base_url('assets/img/location@2x.png')?>" style="margin-right: 17px; margin-bottom: 4px;">Track Resi
                         </div>
 
                         <form action="#" class="ws-form form-horizontal ws-full-lbl track-form" id="track-form" method="POST" accept-charset="utf-8">
@@ -398,66 +398,66 @@
         </div>
     </div>
 
-    <div class="ws-home-service">
-        <div class="container">
-            <div class="__title text-center">
-                Service
-            </div>
-            <div class="__sub-title text-center">
-                <span>SiCepat menyediakan beberapa layanan untuk mendukung bisnis kamu. Dapatkan layanan tepat yang sesuai dengan kebutuhan kamu</span>
-            </div>
-
-            <div class="service-content">
-                <div class="row">
-                    <div class="col-md-12 pr-3 item-service text-center">
-                        <div class="service-item mr-3">
-                            <img src="assets/img/sicepat-maskot-logo-08@2x.png" class="service-img-top">
-                            <div class="service-item-info">
-                                <div class="service-item-title">REGULAR</div>
-                                <div class="service-item-line"></div>
-                                <div class="service-item-title2">Layanan cepat harga regular</div>
-                            </div>
-                        </div>
-                        <div class="service-item mr-3">
-                            <img src="assets/img/sicepat-maskot-logo-08@2x.png" class="service-img-top">
-                            <div class="service-item-info">
-                                <div class="service-item-title">BEST</div>
-                                <div class="service-item-line"></div>
-                                <div class="service-item-title2">Besok sampai tujuan</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item mr-3">
-                            <img src="assets/img/sicepat-maskot-logo-08@2x.png" class="service-img-top">
-                            <div class="service-item-info">
-                                <div class="service-item-title">CARGO</div>
-                                <div class="service-item-line"></div>
-                                <div class="service-item-title2">Kirim lebih banyak lebih<br>terjangkau</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item mr-3">
-                            <img src="assets/img/sicepat-maskot-logo-08@2x.png" class="service-img-top">
-                            <div class="service-item-info">
-                                <div class="service-item-title">CASH ON DELIVERY</div>
-                                <div class="service-item-line"></div>
-                                <div class="service-item-title2">Transaksi belanja dengan pembayaran<br>cash pada saat barang diterima</div>
-                            </div>
-                        </div>
-
-                    </div>
+        <div class="ws-home-service">
+            <div class="container">
+                <div class="__title text-center">
+                    Service
+                </div>
+                <div class="__sub-title text-center">
+                    <span>SiCepat menyediakan beberapa layanan untuk mendukung bisnis kamu. Dapatkan layanan tepat yang sesuai dengan kebutuhan kamu</span>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 mb-5 text-center">
-                        <a id="btn-show-service" name="btn-show-service" class=" btn btn-show-service" href="#">Lihat Detail</a>
+                <div class="service-content">
+                    <div class="row">
+                        <div class="col-md-12 pr-3 item-service text-center">
+                            <div class="service-item mr-3">
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">REGULAR</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Layanan cepat harga regular</div>
+                                </div>
+                            </div>
+                            <div class="service-item mr-3">
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">BEST</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Besok sampai tujuan</div>
+                                </div>
+                            </div>
+
+                            <div class="service-item mr-3">
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">CARGO</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Kirim lebih banyak lebih<br>terjangkau</div>
+                                </div>
+                            </div>
+
+                            <div class="service-item mr-3">
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">CASH ON DELIVERY</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Transaksi belanja dengan pembayaran<br>cash pada saat barang diterima</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-5 text-center">
+                            <a id="btn-show-service" name="btn-show-service" class=" btn btn-show-service" href="#">Lihat Detail</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        </div>
+        </div>
 
 
 
@@ -473,117 +473,4 @@
 
     </div>
 
-    <div class="ws-footer-page">
-        <div class="ws-footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3" style="width:30%;">
-                                <div class="ws-footer-menu">
-                                    INFORMASI </div>
-                                <ul class="ws-menu-list">
-                                    <li><a href="http://sicepat.com/faq">FAQ</a></li>
-                                    <li><a href="http://sicepat.com/statusSicepat">Kode Status Pengantaran Paket</a></li>
-                                    <li><a href="http://sicepat.com/termCond">Terms &amp; Conditions</a></li>
-                                    <li><a href="http://sicepat.com/privacyPolicy">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3" style="width:23%;">
-                                <div class="ws-footer-menu">
-                                    PRODUK &amp; LAYANAN </div>
-                                <ul class="ws-menu-list">
-                                    <li><a href="http://sicepat.com/service">Regular</a></li>
-                                    <li><a href="http://sicepat.com/service">BEST</a></li>
-                                    <li><a href="http://sicepat.com/service">Cargo</a></li>
-                                    <li><a href="http://sicepat.com/service">Cash On Delivery</a></li>
-                                    <li><a href="http://sicepat.com/service">Sicepat Go</a></li>
-                                    <li><a href="http://sicepat.com/service">Sicepat Syariah</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-2" style="width:17%;">
-                                <div class="ws-footer-menu">
-                                    IKUTI KAMI </div>
-                                <ul class="ws-menu-list">
-                                    <li><a href="http://facebook.com/sicepatexpress">Facebook</a></li>
-                                    <li><a href="https://twitter.com/sicepat_ekspres">Twitter</a></li>
-                                    <li><a href="https://www.instagram.com/sicepat_ekspres">Instagram</a></li>
-                                    <li><a href="https://www.youtube.com/channel/UC9DIPyaNoShFJ5oKsrv7AVg">Youtube</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3" style="width:30%;">
-                                <div class="ws-footer-menu">
-                                    INFO KONTAK </div>
-                                <table class="contact-address-list">
-                                    <tbody>
-                                        <tr>
-                                            <td><img class="footer-icon" src="http://sicepat.com/application/websicepat/assets/img/address-loc-white@2x.png"></td>
-                                            <td>Jl. Ir. H. Juanda 3 No. 17-19, RT.008/RW.002, Kel. Kebon Kelapa Kec. Gambir, Jakarta Pusat 10120</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="footer-icon" src="http://sicepat.com/application/websicepat/assets/img/phone-white@2x.png"></td>
-                                            <td>021-5020-0050</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="footer-icon" src="http://sicepat.com/application/websicepat/assets/img/line-white@2x.png"></td>
-                                            <td>@sicepat</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="footer-icon" src="http://sicepat.com/application/websicepat/assets/img/message-white@2x.png"></td>
-                                            <td>Support: customer.care@sicepat.com</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 text-right">
-                        <div class="ws-store-title">
-                            DOWNLOAD APP </div>
-                        <div class="row ws-store-menu">
-                            <div class="col-md-12 mb-2 ws-store-play">
-                                <a href="https://play.google.com/store/apps/details?id=com.sicepat.android.pelanggan" target="blank">
-                                    <img class="store-icon" src="http://sicepat.com/application/websicepat/assets/img/playstore@2x.png">
-                                </a>
-                            </div>
-                            <div class="col-md-12 pt-2 ws-store-app">
-                                <a href="https://itunes.apple.com/id/app/sicepat-express/id1037417977?l=id&amp;mt=8" target="blank">
-                                    <img class="store-icon" src="http://sicepat.com/application/websicepat/assets/img/appstore@2x.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ws-footer-divider"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 mb-4 ws-footer-bottom">
-                        <i class="fa fa-copyright"></i> 2018 PT. SiCepat Ekspres Indonesia. All rights reserved. 2018 PT. SiCepat Ekspres Indonesia. All rights reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
-</html> 
+ 
