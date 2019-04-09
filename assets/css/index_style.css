@@ -356,6 +356,7 @@ img.service-img-top {
 	margin-bottom: 23px;
 }
 
+
 .service-item-title2 {
 	font-size: 13px;
 	font-weight: 500;
@@ -375,7 +376,7 @@ img.service-img-top {
 
 .item-service .service-item {
 	padding-top: 40px;
-	background: #fff;
+	background: rgba(248, 248, 248, 0.788);
 	margin-bottom: 60px;
 	margin-top: 60px;
 	height: 188px;
@@ -487,22 +488,10 @@ bottom {
 }
 
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-	.hotilang {
-		display: none;
-	}
-}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-	.hotilang {
-		display: none;
-	}
-}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 999px) {
 	.hotilang {
 		display: none;
 	}
