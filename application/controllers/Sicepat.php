@@ -5,16 +5,20 @@ class Sicepat extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('v_page-header');
+		$this->load->view('v_index');
 	}
 
 	public function cekresi()
 	{
-		$this->load->view('v_page-cekresi');
+		$this->load->view('v_cekresi');
 	}
 
 	public function ongkir()
 	{
-		$this->load->view('v_page-ongkir');
+		$this->load->view('v_ongkir');
+	}
+	public function service()
+	{
+		$this->load->view('v_service');
 	}
 }
