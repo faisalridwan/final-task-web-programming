@@ -28,13 +28,13 @@
                 <div class="navbar-nav">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link  " href="<?= base_url(); ?>">HOME </a>
+                            <a class="nav-link  " href="<?= base_url(); ?>">HOME</a>
                         </li>
                         <li class="nav-item bg-danger active">
-                            <a class="nav-link" href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
+                            <a class="nav-link" href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('Sicepat/ongkir'); ?>">ONGKIR </a>
+                            <a class="nav-link" href="<?= base_url('Sicepat/ongkir'); ?>">ONGKIR</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">SERVICE </a>
