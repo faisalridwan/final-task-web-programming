@@ -73,12 +73,13 @@
             <div class="service-content pt-5">
                     <div class="row">
                         <div class="col-md-12 pr-3 item-service text-center">
-                            <div class="service-item mr-3 bg-">
+                            <div class="service-item mr-3">
                                 <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
                                 <div class="service-item-info bg">
                                     <div class="service-item-title">REGULAR</div>
                                     <div class="service-item-line"></div>
                                     <div class="service-item-title2">Layanan cepat harga regular</div>
+                                    
                                 </div>
                             </div>
                             <div class="service-item mr-3">
@@ -88,10 +89,7 @@
                                     <div class="service-item-line"></div>
                                     <div class="service-item-title2">Besok sampai tujuan</div>
 
-                                    <tbody>
-                                        <tr>
-                                    </tr>
-                                    </tbody>
+                                    
                                 </div>
                             </div>
 
@@ -101,6 +99,7 @@
                                     <div class="service-item-title">CARGO</div>
                                     <div class="service-item-line"></div>
                                     <div class="service-item-title2">Kirim lebih banyak lebih<br>terjangkau</div>
+                                    
                                 </div>
                             </div>
 
@@ -113,6 +112,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12 pr-3 item-service text-center">
+
+                        <div class="service-item mr-3">
+                            <div>  <span class="text-center mt-5">SICEPAT SYARIAH</span></div>
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">CARGO</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Kirim lebih banyak lebih<br>terjangkau</div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="service-item mr-3">
+                                <img src="<?= base_url('assets/img/sicepat-maskot-logo-08@2x.png')?>" class="service-img-top">
+                                <div class="service-item-info">
+                                    <div class="service-item-title">CASH ON DELIVERY</div>
+                                    <div class="service-item-line"></div>
+                                    <div class="service-item-title2">Transaksi belanja dengan pembayaran<br>cash pada saat barang diterima</div>
+                                </div>
+                            </div>
+</div>
+
+
                     </div>
                 </div>
 

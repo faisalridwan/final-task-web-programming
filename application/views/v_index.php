@@ -44,7 +44,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
-                        </li
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('Admin/index'); ?>">ADMIN </a>
+                        </li>
                     </ul>
                 </div>
             </div>
