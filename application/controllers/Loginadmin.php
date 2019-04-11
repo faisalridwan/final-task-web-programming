@@ -31,36 +31,16 @@ class Loginadmin extends CI_Controller {
 
     }
 
-    public function Register()
-	{
-        if($_POST['pass'] == $_POST['re_pass']){
-            if($this->User->Register()) {
-                $this->session->set_flashdata('SuccessReg','Success');
-                redirect('Landing');
-            } else {
-                $this->session->set_flashdata('FailReg', 'Fail');
-                redirect('Landing/Register');
-            }
-        } else {
-            $this->session->set_flashdata('FailReg', 'Fail');
-            redirect('Landing/Register');
-        }
-    }
-
     public function Signin() {
-        $user = $this->User->findUser();
-        if($user != null){
-            if($this->input->post('remember-me') != null) {
-                set_cookie('logged', $user[0]['Username'], '3600');
-                redirect('Landing');
-            } else {
-                $this->session->set_userdata('successLogin', $user[0]['Username']);
-                redirect('Landing');
-            }
-        } else {
-            $this->session->set_flashdata('falselogin','nodata');
-            redirect('Landing');
-        }
+        $user = $this->M_loginadmin->findUser();
+        redirect('Admin/index');
+        // if($user != null){
+                $this->session->set_userdata('successLogin', $user[0]['Useradmin']);
+                redirect('Admin');
+        // } else {
+        //     $this->session->set_flashdata('falselogin','nodata');
+        //     redirect('Admin');
+        // }
     }
 
     public function Logout() {

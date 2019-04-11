@@ -46,7 +46,7 @@
                             <a class="nav-link" href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('Admin/index'); ?>">ADMIN </a>
+                            <a class="nav-link" href="<?= base_url('Loginadmin/index'); ?>">ADMIN </a>
                         </li>
                     </ul>
                 </div>
