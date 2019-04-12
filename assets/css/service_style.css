@@ -1,0 +1,116 @@
+/* NAVBAR CSS*/
+
+.ws-header-container .navbar li.active a {
+	color: #fff;
+}
+
+.ws-header-container .navbar a {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+/* ICON CSS */
+
+.store-icon {
+	width: 118px;
+}
+
+.footer-icon {
+	width: 21px;
+}
+
+.ws-store-menu {
+	margin-bottom: 20px;
+}
+
+
+/* FOOTER CSS */
+
+.ws-footer-page {
+	background-color: #283842;
+}
+
+.ws-footer-page .ws-footer-top {
+	background-color: #cd2028;
+	color: #FFFFFF;
+	padding-top: 40px;
+}
+
+.ws-store-title {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ws-footer-menu {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.ws-menu-list {
+	font-size: 12px;
+	font-weight: normal;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.ws-menu-list li {
+	margin-bottom: 15px;
+}
+
+.ws-menu-list li a {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+}
+
+.contact-address-list td {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+.ws-footer-divider {
+	min-width: 100%;
+	background: #fff;
+	opacity: 0.15;
+	min-height: 2px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
