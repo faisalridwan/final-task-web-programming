@@ -23,6 +23,14 @@
                 <div class="signin-content justify-content-center">
                     <div class="signin-form">
                         <h2 class="form-title text-center">Sign In Admin</h2>
+
+                        <?php
+                            if(isset($_SESSION['SuccessReg'])) {
+                                $this->load->view('Alerts/SuccessRegis');
+                            } else if(isset($_SESSION['falselogin'])) {
+                                $this->load->view('Alerts/FailLogin');
+                            }
+                        ?>
                         
                         <form action="<?php echo site_url('Loginadmin/Signin'); ?>" method="POST" class="" id="login-form" >
                             <div class="form-group">

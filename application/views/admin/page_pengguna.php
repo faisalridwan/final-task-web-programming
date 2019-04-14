@@ -23,11 +23,11 @@
         <!--HINT UNTUK MENGHAPUS USER KALIAN DAPAT MENGGUNAKAN FORM, MENGGUNAKAN ANCHOR ATAU HREF PADA BUTTON-->
             <form action="">
               <td><?php echo $no++ ?></td>
-              <td><?php echo $d->nim ?></td>
               <td><?php echo $d->nama ?></td>
-              <td><?php echo $d->kelas ?></td>
-              <td><?php echo $d->nama_jurusan ?></td>
-              <td><?php echo $d->fakultas ?></td>
+            <td><?php echo $d->email  ?></td>
+            <td><?php echo $d->notlp ?></td>
+            <td><?php echo $d->namakota ?></td>
+            <td><?php echo $d->alamat ?></td>
 
               <!--BUTTON EDIT MAHASISWA-->
               <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->nim ?>"><i class="fas fa-user-edit"></i></button></td>
@@ -43,16 +43,16 @@
 
 <!-- Modal Edit Mahasiswa -->
 
-<?php $no=1; foreach ($data as $d ) {?>
+<?php $no=1; foreach ($datapengguna as $d ) {?>
   <div class="modal fade" id="edit<?php echo $d->nim ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-        <center><h2>EDIT DATA MAHASISWA </h2></center>
+        <center><h2>EDIT DATA PENGGUNA </h2></center>
         </div>
         <div class="modal-body">
         <!-- isi form ini -->
-        <form method="post" action="<?= base_url('index.php/web/editmahasiswa/' .$d->nim)?>">
+        <form method="post" action="<?= base_url('index.php/Admin/editmahasiswa/' .$d->nim)?>">
         <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="Nim" name="nim" value="<?php echo $d->nim ?>"  required>
           <div class="form-group">
             <label for="formGroupExampleInput">Nama</label>
@@ -65,8 +65,8 @@
           <div class="form-group">
             <label for="formGroupExampleInput2">Jurusan</label>
             <select class="form-control" id="formGroupExampleInput2" name="jurusan" required>
-            <?php foreach ($dataJ as $c ) {?>
-                <option value="<?php echo $c->id_jurusan ?>" <?php if ( $c->id_jurusan == $d->id_jurusan)echo 'selected';?> attr="<?php echo $d->id_jurusan ?>"> <?php echo $c->nama_jurusan.' - '.$c->fakultas;  ?></option>
+            <?php foreach ($datakota as $c ) {?>
+                <option value="<?php echo $c->kodekota ?>" <?php if ( $c->kodekota == $d->kodekota)echo 'selected';?> attr="<?php echo $d->id_jurusan ?>"> <?php echo $c->nama_jurusan.' - '.$c->fakultas;  ?></option>
             <?php } ?>
             </select>            
           </div>

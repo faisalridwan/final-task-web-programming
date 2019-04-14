@@ -44,20 +44,21 @@
 <nav class="navbar navbar-red navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php echo base_url() ?>"><?php echo $this->data['nama_admin'] ?></a>
+      <a class="navbar-brand" href="<?php echo base_url('Loginadmin/index') ?>">ADMIN PAGE</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<?php echo base_url() ?>">Home</a></li>
-      <li><a href="<?php echo base_url('index.php/admin/pengguna') ?>">Mahasiswa</a></li>
-      <li><a href="<?php echo base_url('index.php/admin/kota') ?>">Jurusan</a></li>
+      <li><a href="<?php echo base_url('index.php/admin/pengguna') ?>">Pengguna</a></li>
+      <li><a href="<?php echo base_url('index.php/admin/kota') ?>">Kota</a></li>
+      <li><a href="<?php echo base_url('index.php/admin/transaksi') ?>">Transaksi</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right text-center">
       <li class="dropdown pull-right">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Akun
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#"><?php echo $this->data['id_admin'] ?></a></li>
-          <li><a href="#"><?php echo $this->data['nama_admin'] ?></a></li>
+        
+          <li><a href="#"><?php echo $this->input->cookie('logged') ?></a></li>
         </ul>
       </li>
     </ul>

@@ -10,48 +10,23 @@ class Admin extends CI_Controller {
 		$this->load->model('M_admin');
 	}
 
-	public $data = array(
-		"id_admin" => "-",
-		"nama_admin" => "-",
-	);
-
 	public function index()
 	{
-		//Load page_header and page_index from views
-		$this->load->view('admin/page_header');
-		$this->load->view('admin/page_index');
+		$cookie = $this->input->cookie('logged');
+        if(isset($cookie) || isset($_SESSION['successLogin'])){
+            $cookie = $this->input->cookie('logged');
+            $data['title'] = "Login";
+			$this->load->view('admin/page_header');
+			$this->load->view('admin/page_index');
+        } else {
+			$data['title'] = "Login";
+            $this->load->view('admin/login/login', $data);
+		}
 	}
 
-	public function pengguna()
-	{
-		$data_mahasiswa = $this->M_web->Getmahasiswa_nim();
-		$data_jurusan = $this->M_web->Getjurusan_nim();
-		$this->load->view('page_header',['dataJ'=>$data_jurusan]);
-		$this->load->view('page_mahasiswa',['data'=>$data_mahasiswa]);
-	}
+	// ADMIN
 
-	public function jurusan()
-	{
-		$data_jurusan = $this->M_web->Getjurusan_nim();
-		$this->load->view('page_header');
-		$this->load->view('page_jurusan',['data'=>$data_jurusan]);
-	}
-
-
-	#lengkapi FUNCTION BERIKUT
-	public function hapusmahasiswa($nim)
-	{
-
-		//Load function hapus_mahasiswa from M_web
-		// make it to index.php/web/mahasiswa after delete complete
-
-		$this->M_web->hapus_mahasiswa($nim);
-		redirect('index.php/web/mahasiswa');
-
-	}
-
-
-	public function tambahmahasiswa()
+	public function tambahadmin()
 	{
 		
 		// Create variabel and use it for input data to database.
@@ -65,80 +40,80 @@ class Admin extends CI_Controller {
 		];
 		$this->M_web->tambah_mahasiswa($data);
 		redirect('index.php/web/mahasiswa');
-
-
 	}
 
-	public function editmahasiswa()
-	{
+	// PENGGUNA
 
-		// Create variabel and use it for edit data from database.
-		// Load edit_mahasiswa($nim,$data) from M_web
-		// Redirect to index.php/web/mahasiswa after edit data.
-		$nim =  $this->input->post('nim',true);
+	public function pengguna()
+	{
+		$data_pengguna = $this->M_admin->Getpengguna_id();
+		$data_kota = $this->M_admin->Getkota_kode();
+		$this->load->view('page_header',['datakota'=>$data_kota]);
+		$this->load->view('page_pengguna',['datapengguna'=>$data_pengguna]);
+	}
+
+	public function hapuspengguna($id)
+	{
+		$this->M_admin->hapus_pengguna($id);
+		redirect('index.php/web/mahasiswa');
+	}
+
+	public function editpengguna()
+	{
+		$id_pengguna =  $this->input->post('id_pengguna',true);
 		$data = [
 			"nama" => $this->input->post('nama',true),
-			"kelas" => $this->input->post('kelas',true),
+			"" => $this->input->post('kelas',true),
 			"id_jurusan" => $this->input->post('jurusan',true),
 		];
-		// print_r($data);
 		$this->M_web->edit_mahasiswa($nim,$data);
 		redirect('index.php/web/mahasiswa');
-
-
 	}
 
 
+	public function kota()
+	{
+		$datakota = $this->M_admin->Getkota_kode();
+		$this->load->view('admin/page_header');
+		$this->load->view('admin/page_kota',['data'=>$datakota]);
+	}
 	#lengkapi FUNCTION BERIKUT UNTUK PAGE JURUSAN
 
 
 
-	public function tambahjurusan()
+	public function tambahkota()
 	{
 
 		// Create variabel and use it for add data from database.
 		// Load tambah_jurusan($data) from M_web
 		// Redirect to index.php/web/jurusan after add data.
 		$data = [
-			"nama_jurusan" => $this->input->post('njurusan',true),
-			"fakultas" => $this->input->post('nfakultas',true),
-			"akreditasi" => $this->input->post('akreditasi',true),
+			"kodekota" => $this->input->post('kodekota',true),
+			"namakota" => $this->input->post('namakota',true)
 		];
-		$this->M_web->tambah_jurusan($data);
-		redirect('index.php/web/jurusan');
-
-
-	
-
+		$this->m_admin->tambah_kota($data);
+		redirect('index.php/admin/kota');
 	}
 
-	public function editjurusan()
+	public function editkota()
 	{
-
-		// Create variabel and use it for add data from database.
-		// Load edit_jurusan($id_jurusan,$data) from M_web
-		// Redirect to index.php/web/jurusan after add data.
-		$id_jurusan = $this->input->post('id_jurusan',true);
+		$id_jurusan = $this->input->post('kodekota',true);
 		$data = [
-			"nama_jurusan" => $this->input->post('njurusan',true),
-			"fakultas" => $this->input->post('nfakultas',true),
-			"akreditasi" => $this->input->post('akreditasi',true),
+			"kodekota" => $this->input->post('kodekota',true),
+			"namakota" => $this->input->post('namakota',true)
 		];
 		
 		$this->M_web->edit_jurusan($id_jurusan, $data);
-		redirect('index.php/web/jurusan');
-
-
-	
+		redirect('index.php/admin/kota');
 	}
 
-	public function hapusjurusan($id_jurusan)
+	public function hapuskota($kodekota)
 	{
 		// Create variabel and use it for add data from database.
-		// Load hapus_jurusan($id_jurusan) from M_web
-		// Redirect to index.php/web/jurusan after add data.
-		$this->M_web->hapus_jurusan($id_jurusan);
-		redirect('index.php/web/jurusan');
+		// Load hapus_kota($id_kota) from M_web
+		// Redirect to index.php/web/kota after add data.
+		$this->m_admin-->hapus_kota($kodekota);
+		redirect('index.php/admin/kota');
 
 	}
 }

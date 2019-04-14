@@ -8,11 +8,11 @@ class M_loginadmin extends CI_Model {
                 "useradmin" => $this->input->post('useradmin'),
                 "passadmin" => $this->input->post('passadmin')
             );
-            
+
             $this->db->where($data);
             $result = $this->db->get('admin');
             return $result->result_array();
 
-        
+        //
     }
 }

@@ -7,41 +7,29 @@ class Loginadmin extends CI_Controller {
 	{
         $cookie = $this->input->cookie('logged');
         if(isset($cookie) || isset($_SESSION['successLogin'])){
-            $this->loginPage();
+            $cookie = $this->input->cookie('logged');
+            $data['title'] = "Login";
+            $this->load->view('admin/page_header');
+			$this->load->view('admin/page_index');
         } else {
             $data['title'] = "Login";
-            /*Load view header,Login and Footer from Landing folder.
-                Header and Login have a parameter $data.
-             */
 
             $this->load->view('admin/login/login', $data);
         }
     }
 
-    public function loginPage() {
-        
-        /*
-        1. CREATE COOKIE NAME LOGGED
-        2. $data['image'] = ('replace this text to function getImage() in Model/User.php')
-        3.LOAD VIEW LOGGEDIN AND USE PARAMETER $DATA */
-
-        $cookie = $this->input->cookie('logged');
-        $data['image'] = $this->User->getImage();
-        $this->load->view('loggedin', $data);
-
-    }
-
     public function Signin() {
         $user = $this->M_loginadmin->findUser();
-        redirect('Admin/index');
-        // if($user != null){
-                $this->session->set_userdata('successLogin', $user[0]['Useradmin']);
-                redirect('Admin');
-        // } else {
-        //     $this->session->set_flashdata('falselogin','nodata');
-        //     redirect('Admin');
-        // }
+        if($user != null){
+                set_cookie('logged', $user[0]['useradmin'], '3600');
+                $this->session->set_userdata('successLogin', $user[0]['useradmin']);
+                redirect('Admin/index');
+        } else {
+            $this->session->set_flashdata('falselogin','nodata');
+            redirect('Admin/index');
+        }
     }
+    
 
     public function Logout() {
         /* Complete this function using $cookie.
