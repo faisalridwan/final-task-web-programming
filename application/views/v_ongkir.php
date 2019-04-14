@@ -74,10 +74,13 @@
                                 <div class="col-md-12 text-right"><a id="btn-check" name="btn-check" class=" btn btn-check" href="javascript:void(0)">Cek Harga</a>
                                 </div>
                             </div>
+                            
                     </form>
                 </div>
             </div>
         </div>
+                    <div class="container awb-result" id="awb-result"></div>   
+                    <img src="<?= base_url('assets/img/background2.png'); ?>" class="img-responsive" style="width:100% !important; opacity:0.7;">
     </div>
 
     
