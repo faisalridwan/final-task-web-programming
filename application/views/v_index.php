@@ -27,7 +27,7 @@
                                         SiCepat Go! adalah layanan pengiriman internasional yang bisa bikin bisnis kamu makin lancar, hemat, aman dan cepat sampai, karena SiCepat Go! memberikan : Layanan pick up GRATIS dengan berat per paket maksimal 70 kilogram, Ongkir hemat dengan tambahan diskon 10%, Jangkauan yang luas ke mancanegara* (agar bisnis kamu makin meluas) & Tracking paket kamu di www.sicepat.com Informasi lebih lengkap hubungi Hotline dan Sosial Media kami *Negara tujuan saat ini : seluruh benua Asia dan Australia
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+                                        <button id="btn-white-red" data-target="#exampleModal" name="btn-white-red" class=" btn btn-white-red"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -118,6 +118,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- MODAL -->
+
+
+
+        <!-- CEK TARIF & TRACK RESI -->
 
         <div class="ws-home-check">
             <div class="container">

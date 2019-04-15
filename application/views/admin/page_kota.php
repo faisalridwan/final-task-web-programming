@@ -10,6 +10,8 @@
             <th>No</th>
             <th>Kode Kota</th>
             <th>Nama Kota</th>
+            <th>Edit Kota</th>
+            <th>Hapus Kota</th>
           </tr>
         </thead>
         <tbody>
@@ -21,7 +23,7 @@
             <!--BUTTON EDIT-->
             <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->kodekota ?>"><i class="fas fa-user-edit"></i></button></td>
             <!--BUTTON HAPUS --- ISI LENGKAPI BUTTON INI -->
-            <td><a type="button" class="btn btn-danger"  href="<?php echo base_url('index.php/admin/hapuskota/'.$d->kodekota)?>" onClick="return confirm('Apakah Anda Yakin?')" ><i class="fas fa-user-times"></i></a></td>
+            <td><a type="button" class="btn btn-danger"  href="<?php echo base_url('index.php/admin/hapuskota/'.$d->kodekota)?>" onClick="return confirm('Apakah Anda Yakin Hapus?')" ><i class="fas fa-user-times"></i></a></td>
           </tr>
           <?php } ?>
         </tbody>
@@ -60,26 +62,23 @@
 </div>
 
 
-<!-- Modal Edit JURUSAN -->
+<!-- Modal Edit KOTA -->
 
-<?php $no=1; foreach ($data as $d ) {?>
+<?php $no=1; foreach ($datakota as $d ) {?>
   <div class="modal fade" id="edit<?php echo $d->kodekota ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-        <center><h2>EDIT DATA <?php echo $d->namakota ?> </h2></center>
+        <center><h2>Edit Data <?php echo $d->namakota ?> </h2></center>
         </div>
         <div class="modal-body">
         <!-- isi form ini -->
-        <form method="post" action="editjurusan">
-        <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="kodekota" name="kodekota" value="<?php echo $d->id_jurusan ?>"  required>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Kode Kota</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Jurusan" name="kodekota" value="<?php echo $d->nama_jurusan ?>" required >
-        </div>
+        <form method="post" action="editkota">
+        <label for="formGroupExampleInput">Kode Kota</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Kode Kota" name="kodekota" value="<?php echo $d->kodekota ?>"  required>
         <div class="form-group">
           <label for="formGroupExampleInput">Nama Kota</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Fakultas" name="namakota" value="<?php echo $d->fakultas ?>"required>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Kota" name="namakota" value="<?php echo $d->namakota ?>" required >
         </div>
         </div>
         <div class="modal-footer">

@@ -12,9 +12,10 @@
     <title>SiCepat</title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/cekresi_style.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/index_style.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/ongkir_style.css'); ?>">
+    <?php if ($header == 1){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/index_style.css'); ?>">  <?php } ?>
+    <?php if ($header == 2){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/cekresi_style.css'); ?>">  <?php } ?>
+    <?php if ($header == 3){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/ongkir_style.css'); ?>">  <?php } ?>
+    <?php if ($header == 4){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/service_style.css'); ?>">  <?php } ?>
 
 
 </head>
@@ -31,7 +32,7 @@
                 <div class="navbar-nav">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link  <?php if ($header == 1){ ?> active <?php } ?> " href="<?= base_url(); ?>">HOME </a>
+                            <a class="nav-link  c " href="<?= base_url(); ?>">HOME </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($header == 2){ ?> active <?php } ?> " href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>

@@ -16,7 +16,7 @@
                         <div class="service-flex">                   
                             <div class="service-item-wrap">
                                 <div class="service-item">                       
-                                    <img src="http://sicepat.com/application/websicepat/assets/img/sicepat-maskot-logo-08@2x.png" class="service-img-top">                       <div class="service-item-top">                           
+                                    <img src="<?php base_url('assets/img/sicepat-maskot-logo-08@2x.png ') ?>" class="service-img-top">                       <div class="service-item-top">                           
                                                     <div class="service-item-title">REGULAR</div>                           
                                                         <div class="serv-line"></div>                           
                                                         <div class="service-item-title2">Layanan cepat harga regular</div>                       
