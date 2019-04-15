@@ -52,6 +52,20 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/page_pengguna',['datapengguna'=>$data_pengguna]);
 	}
 
+	public function tambahpengguna()
+	{
+		
+		$data = [
+			"nama" => $this->input->post('nama',true),
+			"email" => $this->input->post('email',true),
+			"notlp" => $this->input->post('notlp',true),
+			"alamat" => $this->input->post('alamat',true),
+			"kodekota" => $this->input->post('kodekota',true),
+		];
+		$this->M_admin->tambah_pengguna($data);
+		redirect('index.php/sicepat/index');
+	}
+
 	public function hapuspengguna($id)
 	{
 		$this->M_admin->hapus_pengguna($id);
@@ -113,6 +127,7 @@ class Admin extends CI_Controller {
 
 	// TRANSAKSI
 
+
 	public function transaksi()
 	{
 		$datatransaksi = $this->M_admin->Gettransaksi_resi();
@@ -161,4 +176,18 @@ class Admin extends CI_Controller {
 		redirect('index.php/admin/transaksi');
 
 	}
+
+	// LOGOUT
+	public function Logout() {
+        
+
+        $cookie = $this->input->cookie('logged');
+        if(isset($cookie)) {
+            delete_cookie('logged');
+            redirect('Loginadmin');
+        } else {
+            session_destroy();
+            redirect('Loginadmin');
+        }
+    }
 }

@@ -71,10 +71,6 @@
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kelas" name="alamat" value="<?php echo $d->alamat ?>" required>
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kelas" name="email" value="<?php echo $d->email ?>" required>
-          </div>
-          <div class="form-group">
             <label for="formGroupExampleInput2">Kota</label>
             <select class="form-control" id="formGroupExampleInput2" name="kodekota" required>
             <?php foreach ($datakota as $c ) {?>

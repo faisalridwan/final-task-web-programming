@@ -57,8 +57,8 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Akun
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-        
-          <li><a href="#"><?php echo $this->input->cookie('logged') ?></a></li>
+          <li><a href="<?php echo base_url('Loginadmin/index') ?>"><?php echo $this->input->cookie('logged') ?></a></li>
+          <li class="active"><a href="<?php echo site_url('admin/Logout'); ?>">Log Out<span class="sr-only">(current)</span></a></li>
         </ul>
       </li>
     </ul>

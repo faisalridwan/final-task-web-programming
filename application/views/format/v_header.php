@@ -22,8 +22,9 @@
 <!--  -->
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-        <div class="container">
+    <div class="container">
+    <nav class="navbar navbar-expand navbar-light bg-white ">
+        
             <a class="navbar-brand" href="<?= base_url()?>"><img src="<?= base_url('assets/img/logo-header.png')?>" width="150px;" class="main-logo img-responsive"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                 <div class="navbar-nav">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link  c " href="<?= base_url(); ?>">HOME </a>
+                            <a class="nav-link <?php if ($header == 1){ ?> active <?php } ?> " href="<?= base_url(); ?>">HOME </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($header == 2){ ?> active <?php } ?> " href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
@@ -55,11 +56,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-2 hotilang">
+            <div class="col-md-2 col-sm-1 hotilang">
                 <div class=" hotilang">Hotline</div>
                 <b>
                     <div class=" text-danger hotilang">021-5020-0050</div>
                 </b>
             </div>
-        </div>
+        
     </nav>
+    </div>

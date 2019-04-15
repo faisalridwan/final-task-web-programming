@@ -2,6 +2,7 @@
     <div class="box">
       <h2>Data Transaksi</h2>
       <p>Tabel Data Transaksi Website SiCepat</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkota">Tambah Transaksi</button>
       <br><br>
       <table class="table table-bordered" id="table">
         <thead>
@@ -46,6 +47,59 @@
     </div>
   </div>
 
+  <!-- Modal Tambah Kota -->
+
+<div class="modal fade" id="tambahkota" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <center><h2>TAMBAH DATA TRANSAKSI</h2></center>
+      </div>
+      <div class="modal-body">
+      <!-- isi form ini -->
+      <form method="POST" action="<?php echo base_url('index.php/admin/tambahtransaksi/')?>">
+      <div class="form-group">
+            <label for="formGroupExampleInput">No Resi</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="No Resi" name="noresi"  required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Layanan</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Layanan" name="layanan" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Asal</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Asal" name="asal"  required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Tujuan</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tujuan" name="tujuan"  required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Pengirim</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pengirim" name="pengirim" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Tgl Pengirim</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Pengirim" name="tglpengiriman" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Nama Penerima</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Penerima" name="namapenerima" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Status</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Status" name="status" required>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+        <input  type="submit" class="btn btn-primary" id="hapus" value="Submit" placeholder="Simpan">
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Modal Edit Pengguna -->
 
 <?php $no=1; foreach ($datatransaksi as $d ) {?>
@@ -89,6 +143,8 @@
           <div class="form-group">
             <label for="formGroupExampleInput2">Status</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Status" name="status" value="<?php echo $d->status ?>" required>
+            
+
           </div>
         </div>
         <div class="modal-footer">

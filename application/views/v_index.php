@@ -2,7 +2,7 @@
     <!-- CAROUSEL -->
 
     <div class="ws-home-page">
-        <div class="jumbotron jumbotron-fluid bg-danger w-5">
+        <div class="jumbotron jumbotron-fluid " style="background-color:#cd2028;">
             <div class="container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators mb-3">
@@ -13,8 +13,8 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 
                     </ol>
-                    <div class="carousel-inner bg-danger">
-                        <div class="carousel-item active justify-justify-content-center">
+                    <div class="carousel-inner bg-white-red">
+                        <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="<?= base_url('assets/img/1.png') ?>" class="d-block pt-5" width=80%>
@@ -27,7 +27,8 @@
                                         SiCepat Go! adalah layanan pengiriman internasional yang bisa bikin bisnis kamu makin lancar, hemat, aman dan cepat sampai, karena SiCepat Go! memberikan : Layanan pick up GRATIS dengan berat per paket maksimal 70 kilogram, Ongkir hemat dengan tambahan diskon 10%, Jangkauan yang luas ke mancanegara* (agar bisnis kamu makin meluas) & Tracking paket kamu di www.sicepat.com Informasi lebih lengkap hubungi Hotline dan Sosial Media kami *Negara tujuan saat ini : seluruh benua Asia dan Australia
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" data-target="#exampleModal" name="btn-white-red" class=" btn btn-white-red"><b>Gabung Sekarang</b></button>
+                                        <!-- <button id="btn-white-red" data-target="#ModalDaftar" name="btn-white-red" class=" btn btn-white-red"><b>Gabung Sekarang</b></button> -->
+                                        <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@
                                         Untuk informasi lebih lanjut silahkan hubungi melalui LINE : @sicepaT
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+                                    <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +66,7 @@
                                         Layanan baru dari Sicepat Cargo dengan paket yang lebih banyak dengan harga yang lebih murah sebagai bentuk terima kasih kami kepada para Sahabat SiCepat yang selalu mendukung kami sebagai kiriman terpercaya bisnis Online Shop kamu. Dengan pengiriman minimal 5 kg dan saat ini hanya berlaku untuk wilayah JABODETABEK dan Bandung. SiCepat Cargo Semakin Besar Semakin Mudah. Hubungi Hotline atau sosial media kami untuk info lebih lanjut.
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+                                    <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +84,7 @@
                                         Tidak hanya cepat, kami juga sediakan pick up GRATIS untuk mempermudah jualan Online Shop kamu tanpa minimal paket. Tidak perlu lagi menumpuk dan mengantarkan barang, karena SiGesit kami yang akan melakukannya. Hubungi hotline atau sosial media kami untuk info lebih lanjut.
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+                                    <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +102,7 @@
                                         Kami kirim paket kamu hanya dalam 15 jam sampai dengan harga sama tanpa tambahan apapun. Hanya berlaku untuk Jabodetabek dan beberapa kota besar Indonesia.
                                     </div>
                                     <div class="row mb-5">
-                                        <button id="btn-white-red" name="btn-white-red" class=" btn btn-white-red" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+                                    <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -119,9 +120,71 @@
             </div>
         </div>
 
-        <!-- MODAL -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="background-color:#cd2028;">
+                    <h5 class="modal-title" id="exampleModalLabel " style="color:white;" >Form Sahabat SiCepat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color:white;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <center> <h5><b>Saatnya gunakan delivery yang cepat & terpercaya</b></h5></center>
+                    <div class="row pt-5">
+                        <div class="col-md-6">
+                            <div class="row mr-2" >
+                            <div class="col-md-3"> <img  src="<?= base_url('assets/img/notes@2x.png')?>" width=80% ></div>
+                            <div class="col-md-9"> <p>Isi data diri / online shop secara lengkap</p></div>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-3"> <img  src="<?= base_url('assets/img/mail-check@2x.png')?>" width=80% ></div>
+                            <div class="col-md-9"> <p>Dapatkan email / sms konfirmasi dari SiCepat.com</p></div>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-3"> <img  src="<?= base_url('assets/img/partner@2x.png')?>" width=80% ></div>
+                            <div class="col-md-9"> <p>Anda telah menjadi partner dan nikmati layanan cepat dari SiCepat.com</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            
 
 
+                        <form method="post" action="<?= base_url('index.php/admin/tambahpengguna/')?>">
+                            <div class="form-group pr-5">
+                                <input type="text" class="form-control"  placeholder="Nama" name="nama"   required>
+                            </div>
+                            <div class="form-group pr-5">
+                                <input type="text" class="form-control" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="form-group pr-5">
+                                <input type="text" class="form-control"  placeholder="No Telepon" name="notlp"  required>
+                            </div>
+                            <div class="form-group pr-5">
+                                <input type="text" class="form-control"  placeholder="Alamat" name="alamat"  required>
+                            </div>
+                            <div class="form-group pr-5">
+                                <input type="text" class="form-control"  placeholder="Kelas" name="email" required>
+                            </div>
+                            <div class="form-group pr-5">
+                                <select class="form-control" id="formGroupExampleInput2" name="kodekota" required>
+                                <?php foreach ($datakota as $c ) {?>
+                                    <option value="<?php echo $c->kodekota ?>"> <?php echo $c->kodekota.' - '.$c->namakota;  ?></option>
+                                <?php } ?>
+                                    
+                                </select>            
+                            </div>
+                            <div class="form-group pr-5">
+                                <input  type="submit" class="btn btn-block btn-danger" value="DAFTAR" style="background-color:#cd2028;">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- CEK TARIF & TRACK RESI -->
 
@@ -194,114 +257,6 @@
                             </div>
                         </form>
 
-                        <div id="fare-list" class="fare-result"></div>
-                        <script type="text/javascript">
-                            var countries = [{
-                                    "value": "Jakarta",
-                                    "data": "CGK"
-                                },
-                                {
-                                    "value": "Tangerang",
-                                    "data": "TGR"
-                                },
-                                {
-                                    "value": "Bekasi",
-                                    "data": "BKI"
-                                },
-                                {
-                                    "value": "Depok",
-                                    "data": "DPK"
-                                },
-                                {
-                                    "value": "Bogor",
-                                    "data": "BOO"
-                                },
-                                {
-                                    "value": "Semarang",
-                                    "data": "SRG"
-                                },
-                                {
-                                    "value": "Surabaya",
-                                    "data": "SUB"
-                                },
-                                {
-                                    "value": "Medan",
-                                    "data": "MES"
-                                },
-                                {
-                                    "value": "Bandung",
-                                    "data": "BDO"
-                                },
-                                {
-                                    "value": "Yogyakarta",
-                                    "data": "JOG"
-                                },
-                                {
-                                    "value": "Batam",
-                                    "data": "BTH"
-                                },
-                                {
-                                    "value": "Cilegon",
-                                    "data": "CLG"
-                                },
-                                {
-                                    "value": "Denpasar",
-                                    "data": "DPS"
-                                },
-                                {
-                                    "value": "Malang",
-                                    "data": "MLG"
-                                },
-                                {
-                                    "value": "Solo",
-                                    "data": "SOC"
-                                },
-                                {
-                                    "value": "Jember",
-                                    "data": "JBR"
-                                },
-                                {
-                                    "value": "Jepara",
-                                    "data": "JPR"
-                                },
-                                {
-                                    "value": "Magelang",
-                                    "data": "MGL"
-                                },
-                                {
-                                    "value": "Sukabumi",
-                                    "data": "SMI"
-                                },
-                                {
-                                    "value": "Banjarmasin",
-                                    "data": "BDJ"
-                                },
-                                {
-                                    "value": "Palembang",
-                                    "data": "PLM"
-                                },
-                                {
-                                    "value": "Pekanbaru",
-                                    "data": "PKU"
-                                },
-                                {
-                                    "value": "Balikpapan",
-                                    "data": "BPN"
-                                },
-                                {
-                                    "value": "Makassar",
-                                    "data": "UPG"
-                                },
-                                {
-                                    "value": "Madiun",
-                                    "data": "MDN"
-                                },
-                                {
-                                    "value": "Kediri",
-                                    "data": "KDR"
-                                }
-                            ];
-                        </script>
                     </div>
 
                     <div class="col-md-5 col-md-offset-2 ws-home-check-right">
@@ -415,7 +370,8 @@
         </div>
 
         <div class="col-md-6 text-center ws-join-right">
-            <button id="btn-join" name="btn-join" class=" btn btn-join" href="javascript:void(0)"><b>Gabung Sekarang</b></button>
+        <!-- <button type="button" class="btn btn-white-red" data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button> -->
+            <button type="button" id="btn-join" name="btn-join" class=" btn btn-join"  data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>
         </div>
     </div>
 

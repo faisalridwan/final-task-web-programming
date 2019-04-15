@@ -2,7 +2,7 @@
     <div class="box">
       <h2>Data Kota</h2>
       <p>Tabel Data Kota Sicepat</p>            
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkota">TAMBAH Kota</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkota">Tambah Kota</button>
       <br><br>
       <table class="table table-bordered" id="table">
         <thead>
@@ -32,7 +32,7 @@
   </div>
 
 
-<!-- Modal Tambah Jurusan -->
+<!-- Modal Tambah Kota -->
 
 <div class="modal fade" id="tambahkota" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
   <div class="modal-dialog" role="document">

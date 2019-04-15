@@ -21,6 +21,11 @@ class M_admin extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	public function tambah_pengguna($data)
+	{
+		$this->db->insert('pengguna', $data);
+	}
 	
 	public function hapus_pengguna($id)
 	{
