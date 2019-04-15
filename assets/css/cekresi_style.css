@@ -13,9 +13,8 @@
 }
 
 li .active a {
-	color: #FFFFFF;
+	color: #ffffff;
 }
-
 
 section {
 	min-height: 200px;
@@ -49,9 +48,9 @@ img {
 
 /* ICON CSS */
 
-.check-awb-icon {
-	width: 32px;
-	height: 31px;
+.check-fee-icon2 {
+	width: 33px;
+	height: 27px;
 }
 
 .store-icon {
@@ -67,8 +66,8 @@ img {
 }
 
 .img-responsive,
-.thumbnail a>img,
-.thumbnail>img {
+.thumbnail a > img,
+.thumbnail > img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -87,7 +86,7 @@ img {
 	color: #4a4a4a;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 20px;
@@ -95,7 +94,7 @@ img {
 	box-shadow: 0px 1px 10px #999;
 }
 
-.nav>li>a {
+.nav > li > a {
 	position: relative;
 	display: block;
 	padding: 10px 15px;
@@ -122,7 +121,6 @@ img {
 	padding: 16px;
 	margin-bottom: 50px;
 }
-
 
 /* BUTTON CSS */
 
@@ -154,7 +152,7 @@ img {
 
 .ws-footer-page .ws-footer-top {
 	background-color: #cd2028;
-	color: #FFFFFF;
+	color: #ffffff;
 	padding-top: 40px;
 }
 
@@ -184,7 +182,6 @@ ul {
 	margin-bottom: 10px;
 }
 
-
 .ws-menu-list {
 	font-size: 12px;
 	font-weight: normal;
@@ -201,7 +198,7 @@ ul {
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .contact-address-list td {
@@ -209,7 +206,7 @@ ul {
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
-	color: #FFFFFF;
+	color: #ffffff;
 	padding-top: 0px;
 	padding-bottom: 20px;
 	vertical-align: top;
@@ -224,11 +221,10 @@ ul {
 	margin-bottom: 25px;
 }
 
-
 /* BOTTOM CSS */
 
 bottom {
-	color: #FFFFFF;
+	color: #ffffff;
 	padding-bottom: 35px;
 	font-size: 13px;
 	font-weight: normal;
