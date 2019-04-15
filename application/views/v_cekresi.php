@@ -8,7 +8,7 @@
                 <div class="col-md-5 ws-home-check-left">
                     <form action="#" class="ws-form form-horizontal check-form " method="post">
                         <div class="pt-5 text-center pb-5 ">
-                            <img class="check-fee-icon" src="<?= base_url('assets/img/location@2x.png') ?>" width=8%> Cek Resi
+                            <img class="check-fee-icon2" src="<?= base_url('assets/img/location@2x.png') ?>" width=8%> Cek Resi
                         </div>
 
                         <div class="row"></div>
