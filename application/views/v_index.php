@@ -11,8 +11,8 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-
                     </ol>
+
                     <div class="carousel-inner bg-white-red">
                         <div class="carousel-item active">
                             <div class="row">
@@ -33,6 +33,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -53,6 +54,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -71,6 +73,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -89,6 +92,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -344,7 +348,6 @@
                                     <div class="service-item-title2">Transaksi belanja dengan pembayaran<br>cash pada saat barang diterima</div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -374,4 +377,3 @@
 
     </div>
 
- 

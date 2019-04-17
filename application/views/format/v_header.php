@@ -12,10 +12,11 @@
     <title>SiCepat</title>
 
     <!-- My CSS -->
-    <?php if ($header == 1){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/index_style.css'); ?>">  <?php } ?>
-    <?php if ($header == 2){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/cekresi_style.css'); ?>">  <?php } ?>
-    <?php if ($header == 3){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/ongkir_style.css'); ?>">  <?php } ?>
-    <?php if ($header == 4){ ?> <link rel="stylesheet" href="<?= base_url('assets/css/service_style.css'); ?>">  <?php } ?>
+    <link rel="stylesheet" href="<?= base_url('assets/css/format/header.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/format/footer.css'); ?>">
+    
+
 
 
 </head>

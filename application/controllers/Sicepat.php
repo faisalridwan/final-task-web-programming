@@ -54,7 +54,7 @@ class Sicepat extends CI_Controller {
 	{
 		$data["header"] = 6;
 		$this->load->view('format/v_header',$data);
-		$this->load->view('v_service');
+		$this->load->view('v_contact');
 		$this->load->view('format/v_footer');
 	}
 	public function admin()
