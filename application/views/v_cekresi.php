@@ -54,7 +54,3 @@
         </div>  
             <img src="<?= base_url('assets/img/background2.png'); ?>" class="img-responsive" style="width:100% !important; opacity:0.7;">        
     </div>
-
-    
-    
-
