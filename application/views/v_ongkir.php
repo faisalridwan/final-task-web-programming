@@ -84,7 +84,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-right">
-                                <button type="submit" id="btnongkir" class="btn btn-check"><b>Cek Harga</b></button>
+                                <button type="submit" id="btnongkir" class="btn btn-danger float-right"><b>Cek Harga</b></button>
                                 </div>
                             </div>
                             

@@ -2,7 +2,10 @@
 
     <!-- MAIN CONTENT -->
 
-    <div class="jumbotron jumbotron-fluid bg-white">
+    <div class="jumbotron jumbotron-fluid bg-white" style="
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+">
         <div class="container"> 
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
@@ -45,7 +48,7 @@
                                 </div>
 
                                 <div class="col-md-5">
-                                    <a class="btn btn-danger float-right" href="#" role="button">Lacak</a>
+                                <button type="submit" id="btresi" class="btn btn-danger float-right"><b>Lacak</b></a>
                                 </div>   
                             </div>
                     </form>       

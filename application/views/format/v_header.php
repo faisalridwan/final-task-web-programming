@@ -24,7 +24,7 @@
 <body>
     <!-- NAVBAR -->
     <div class="container">
-    <nav class="navbar navbar-expand navbar-light bg-white ">
+    <nav class="navbar navbar-expand navbar-light ">
         
             <a class="navbar-brand" href="<?= base_url()?>"><img src="<?= base_url('assets/img/logo-header.png')?>" width="150px;" class="main-logo img-responsive"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,25 +34,25 @@
                 <div class="navbar-nav">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($header == 1){ ?> active <?php } ?> " href="<?= base_url(); ?>">HOME </a>
+                            <a class="nav-link <?php if ($header == 1){ ?> active <?php } ?> " <?php if ($header == 1){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url(); ?>">HOME </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($header == 2){ ?> active <?php } ?> " href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
+                            <a class="nav-link <?php if ($header == 2){ ?> active <?php } ?> " <?php if ($header == 2){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
                         </li>
                         <li class="nav-item  " >
-                            <a class="nav-link <?php if ($header == 3){ ?> active <?php } ?> " href="<?= base_url('Sicepat/ongkir'); ?>">ONGKIR </a>
+                            <a class="nav-link <?php if ($header == 3){ ?> active <?php } ?> " <?php if ($header == 3){ ?> style="color: #fff;background-color: #cd2028; padding-top:10px;"  <?php } ?> href="<?= base_url('Sicepat/ongkir'); ?>">ONGKIR </a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link <?php if ($header == 4){ ?> active <?php } ?> " href="<?= base_url('Sicepat/service'); ?>">SERVICE </a>
+                            <a class="nav-link <?php if ($header == 4){ ?> active <?php } ?> " <?php if ($header == 4){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url('Sicepat/service'); ?>">SERVICE </a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link <?php if ($header == 5){ ?> active <?php } ?> " href="<?= base_url('Sicepat/lokasi'); ?>">LOKASI </a>
+                            <a class="nav-link <?php if ($header == 5){ ?> active <?php } ?> " <?php if ($header == 5){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url('Sicepat/lokasi'); ?>">LOKASI </a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link <?php if ($header == 6){ ?> active <?php } ?> " href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
+                            <a class="nav-link <?php if ($header == 6){ ?> active <?php } ?> " <?php if ($header == 6){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link <?php if ($header == 7){ ?> active <?php } ?> " href="<?= base_url('admin'); ?>">ADMIN </a>
+                            <a class="nav-link <?php if ($header == 7){ ?> active <?php } ?> " <?php if ($header == 7){ ?> style="color: #fff;background-color: #cd2028;"  <?php } ?> href="<?= base_url('admin'); ?>">ADMIN </a>
                         </li>
                     </ul>
                 </div>

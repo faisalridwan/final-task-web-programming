@@ -34,8 +34,8 @@ form {
 .btn-join {
 	border-radius: 3px;
 	text-align: center;
-	background: #d0021b;
-	border-color: #d0021b;
+	background: #cd2028;
+	border-color: #cd2028;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;
@@ -51,21 +51,21 @@ form {
 	border-radius: 3px;
 	background-color: #ffffff;
 	text-align: center;
-	border-color: #d0021b;
+	border-color: #cd2028;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	letter-spacing: 0.5px;
-	color: #d0021b;
+	color: #cd2028;
 	padding: 17px 26px 17px 25px;
 }
 
 .btn-show-service {
 	border-radius: 3px;
 	text-align: center;
-	background: #d0021b;
-	border-color: #d0021b;
+	background: #cd2028;
+	border-color: #cd2028;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;
@@ -329,7 +329,7 @@ img.service-img-top {
 .service-item-line {
 	width: 40px;
 	height: 3px;
-	background-color: #d0021b;
+	background-color: #cd2028;
 	margin: 0 auto;
 	margin-top: 23px;
 	margin-bottom: 23px;
@@ -381,21 +381,10 @@ bottom {
 /* end of index */
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* CEK RESI */
 
 .active {
-	background-color: #d0021b;
+	background-color: #cd2028;
 	padding-bottom: 10px;
 }
 
@@ -444,7 +433,7 @@ li .active a {
 
 .check-awb-container .check-awb-wrapper .btn-check {
 	border-radius: 3px;
-	background-color: #d0021b;
+	background-color: #cd2028;
 	padding: 17px 60px;
 	font-size: 16px;
 	font-weight: bold;
@@ -477,7 +466,7 @@ li .active a {
 
 .ws-deliveryfee-page .check-form .btn-check {
 	border-radius: 3px;
-	background-color: #d0021b;
+	background-color: #cd2028;
 	padding: 17px 60px;
 	font-size: 16px;
 	font-weight: bold;

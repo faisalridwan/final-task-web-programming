@@ -24,3 +24,8 @@
 	display: block;
 	padding: 10px 15px;
 }
+
+.active {
+	color: #fff;
+	background-color: #cd2028;
+}
