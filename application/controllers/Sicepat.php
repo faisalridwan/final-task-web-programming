@@ -28,9 +28,13 @@ class Sicepat extends CI_Controller {
 	public function ongkir()
 	{
 		$data["header"] = 3;
+		$data_kota = $this->M_admin->Getkota_kode();
+		$datapengiriman = $this->M_admin->Getpengiriman_id();
 		$this->load->view('format/v_header',$data);
-		$this->load->view('v_ongkir');
+		$this->load->view('v_ongkir',['datakota'=>$data_kota,'datapengiriman'=>$datapengiriman]);
 		$this->load->view('format/v_footer');
+
+		$this->session->set_flashdata('dataongkir','nodata');
 	}
 	public function service()
 	{
@@ -60,4 +64,10 @@ class Sicepat extends CI_Controller {
 		$this->load->view('v_service');
 		$this->load->view('format/v_footer');
 	}
+
+	public function dataongkir()
+	{
+		$this->load->view('Alerts/dataongkir');
+	}
+
 }

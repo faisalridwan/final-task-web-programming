@@ -15,6 +15,7 @@
             <th>Pengirim</th>
             <th>Tgl Pengiriman</th>
             <th>Nama Penerima</th>
+            <th>Tgl Penerimaan</th>
             <th>STATUS</th>
             <th>Edit</th>
             <th>Hapus</th>
@@ -32,6 +33,7 @@
             <td><?php echo $d->pengirim ?></td>
             <td><?php echo $d->tglpengiriman ?></td>
             <td><?php echo $d->namapenerima ?></td>
+            <td><?php echo $d->tglpenerimaan ?></td>
             <td><?php echo $d->status ?></td>
             
 
@@ -47,7 +49,7 @@
     </div>
   </div>
 
-  <!-- Modal Tambah Kota -->
+  <!-- Modal Tambah Transaksi -->
 
 <div class="modal fade" id="tambahkota" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -64,31 +66,45 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Layanan</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Layanan" name="layanan" required>
+            <select class="form-control" id="formGroupExampleInput2" name="idlayanan" required>
+            <?php foreach ($datapengiriman as $c ) {?>
+                <option value="<?php echo $c->idlayanan ?>"> <?php echo $c->layanan;  ?></option>
+            <?php } ?>
+            </select> 
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Asal</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Asal" name="asal"  required>
+            <select class="form-control" id="formGroupExampleInput2" name="asal" required>
+            <?php foreach ($datakota as $c ) {?>
+                <option value="<?php echo $c->kodekota ?>"> <?php echo $c->kodekota.' - '.$c->namakota;  ?></option>
+            <?php } ?>
+            </select> 
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Tujuan</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tujuan" name="tujuan"  required>
+            <select class="form-control" id="formGroupExampleInput2" name="tujuan" required>
+            <?php foreach ($datakota as $c ) {?>
+                <option value="<?php echo $c->kodekota ?>"> <?php echo $c->kodekota.' - '.$c->namakota;  ?></option>
+            <?php } ?>
+            </select> 
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">Pengirim</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pengirim" name="pengirim" required>
+            <label for="formGroupExampleInput2">Nama Pengirim</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Pengirim" name="pengirim" required>
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2">Tgl Pengirim</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Pengirim" name="tglpengiriman" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Nama Penerima</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Penerima" name="namapenerima" required>
+            <label for="formGroupExampleInput2">Tgl Pengiriman</label>
+            <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Pengiriman" name="tglpengiriman" required>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Status</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Status" name="status" required>
+            <select class="form-control" id="formGroupExampleInput2" name="status" required>
+              <option value="SHIPMENT RECEIVED">SHIPMENT RECEIVED</option>          
+              <option value="SHIPMENT PICKED">SHIPMENT PICKED</option>
+              <option value="ON TRANSIT" >ON TRANSIT</option>
+              <option value="WITH DELIVERY COURIER">WITH DELIVERY COURIER</option>
+              <option value="DELIVERED">DELIVERED</option>
+            </select>
           </div>
       </div>
       <div class="modal-footer">
@@ -113,37 +129,26 @@
         <!-- isi form ini -->
         <form method="post" action="<?= base_url('index.php/Admin/edittransaksi/' .$d->noresi)?>">
           <div class="form-group">
-            <label for="formGroupExampleInput">No Resi</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="No Resi" name="noresi"  value="<?php echo $d->noresi ?>" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Layanan</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Layanan" name="layanan" value="<?php echo $d->layanan ?>" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Asal</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Asal" name="asal" value="<?php echo $d->asal ?>" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Tujuan</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tujuan" name="tujuan" value="<?php echo $d->tujuan ?>" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Pengirim</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pengirim" name="pengirim" value="<?php echo $d->pengirim ?>" required>
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Tgl Pengirim</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Pengirim" name="tglpengiriman" value="<?php echo $d->tglpengiriman ?>" required>
+          <label for="formGroupExampleInput2">No Resi</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="No Resi" name="noresi"  value="<?php echo $d->noresi ?>" readonly>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Nama Penerima</label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Penerima" name="namapenerima" value="<?php echo $d->namapenerima ?>" required>
           </div>
           <div class="form-group">
+            <label for="formGroupExampleInput2">Tgl Penerimaan</label>
+            <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Penerimaan" name="tglpenerimaan" value="<?php echo $d->tglpenerimaan ?>" required>
+          </div>
+          <div class="form-group">
             <label for="formGroupExampleInput2">Status</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Status" name="status" value="<?php echo $d->status ?>" required>
-            
+            <select class="form-control" id="formGroupExampleInput2" name="status" required>
+              <option value="SHIPMENT RECEIVED" <?php if ( "SHIPMENT RECEIVED" == $d->status)echo 'selected';?> >SHIPMENT RECEIVED</option>          
+              <option value="SHIPMENT PICKED" <?php if ( "SHIPMENT PICKED" == $d->status)echo 'selected';?> >SHIPMENT PICKED</option>
+              <option value="ON TRANSIT" <?php if ( "ON TRANSITt" == $d->status)echo 'selected';?> >ON TRANSIT</option>
+              <option value="WITH DELIVERY COURIER" <?php if ( "WITH DELIVERY COURIER" == $d->status)echo 'selected';?> >WITH DELIVERY COURIER</option>
+              <option value="DELIVERED" <?php if ( "DELIVERED" == $d->status)echo 'selected';?> >DELIVERED</option>
+            </select> 
 
           </div>
         </div>

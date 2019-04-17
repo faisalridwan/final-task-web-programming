@@ -1,0 +1,1 @@
+"<table><tr><th>Service</th><th>Deskripsi</th><th>Tarif</th><th>Estimasi</th></tr><tr><td>REG</td><td>Regular</td><td>240000</td><td>3 - 6 hari</td></tr><tr><td>Cargo</td><td>Cargo per Kg (minimal 5Kg)</td><td>168000</td><td>3 - 6 hari</td></tr></table>"

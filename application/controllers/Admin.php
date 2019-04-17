@@ -15,31 +15,58 @@ class Admin extends CI_Controller {
 		$cookie = $this->input->cookie('logged');
         if(isset($cookie) || isset($_SESSION['successLogin'])){
             $cookie = $this->input->cookie('logged');
-            $data['title'] = "Login";
 			$this->load->view('admin/page_header');
 			$this->load->view('admin/page_index');
         } else {
-			$data['title'] = "Login";
-            $this->load->view('admin/login/login', $data);
+            $this->load->view('admin/page_login');
 		}
 	}
 
 	// ADMIN
 
+	public function admin()
+	{
+		$dataadmin = $this->M_admin->Getadmin_id();
+		$this->load->view('admin/page_header');
+		$this->load->view('admin/page_admin',['dataadmin'=>$dataadmin]);
+	}
+
 	public function tambahadmin()
 	{
-		
-		// Create variabel and use it for input data to database.
-		// Load tambah_mahasiswa($data) from M_web
-		// Redirect to index.php/web/mahasiswa after add data.
 		$data = [
-			"nim" => $this->input->post('nim',true),
-			"nama" => $this->input->post('nama',true),
-			"kelas" => $this->input->post('kelas',true),
-			"id_jurusan" => $this->input->post('jurusan',true),
+			"namaadmin" => $this->input->post('namaadmin',true),
+			"useradmin" => $this->input->post('useradmin',true),
+			"passadmin" => $this->input->post('passadmin',true)
 		];
-		$this->M_web->tambah_mahasiswa($data);
-		redirect('index.php/web/mahasiswa');
+		$user = $this->M_admin->findUser();
+		
+        if($user != null){
+			$this->M_admin->tambah_admin($data);
+			redirect('admin/admin');
+        } else {
+			redirect('admin/admin');
+        }
+		
+	}
+
+	public function editadmin()
+	{
+		$idadmin = $this->input->post('idadmin',true);
+		$data = [
+			"namaadmin" => $this->input->post('namaadmin',true)
+			
+		];
+		
+		$this->M_admin->edit_admin($idadmin, $data);
+		redirect('admin/admin');
+	}
+
+	public function hapusadmin($idadmin)
+	{
+
+		$this->M_admin->hapus_admin($idadmin);
+		redirect('admin/admin');
+
 	}
 
 	// PENGGUNA
@@ -63,13 +90,13 @@ class Admin extends CI_Controller {
 			"kodekota" => $this->input->post('kodekota',true),
 		];
 		$this->M_admin->tambah_pengguna($data);
-		redirect('index.php/sicepat/index');
+		redirect('sicepat/index');
 	}
 
 	public function hapuspengguna($id)
 	{
 		$this->M_admin->hapus_pengguna($id);
-		redirect('index.php/admin/admin');
+		redirect('admin/pengguna');
 	}
 
 	public function editpengguna()
@@ -83,7 +110,7 @@ class Admin extends CI_Controller {
 			"kodekota" => $this->input->post('kodekota',true),
 		];
 		$this->M_admin->edit_pengguna($id,$data);
-		redirect('index.php/admin/pengguna');
+		redirect('admin/pengguna');
 	}
 
 	// KOTA
@@ -102,7 +129,7 @@ class Admin extends CI_Controller {
 			"namakota" => $this->input->post('namakota',true)
 		];
 		$this->M_admin->tambah_kota($data);
-		redirect('index.php/admin/kota');
+		redirect('admin/kota');
 	}
 
 	public function editkota()
@@ -114,14 +141,14 @@ class Admin extends CI_Controller {
 		];
 		
 		$this->M_admin->edit_kota($kodekota, $data);
-		redirect('index.php/admin/kota');
+		redirect('admin/kota');
 	}
 
 	public function hapuskota($kodekota)
 	{
 
 		$this->M_admin->hapus_kota($kodekota);
-		redirect('index.php/admin/kota');
+		redirect('admin/kota');
 
 	}
 
@@ -131,7 +158,9 @@ class Admin extends CI_Controller {
 	public function transaksi()
 	{
 		$datatransaksi = $this->M_admin->Gettransaksi_resi();
-		$this->load->view('admin/page_header');
+		$datakota = $this->M_admin->Getkota_kode();
+		$datapengiriman = $this->M_admin->Getpengiriman_id();
+		$this->load->view('admin/page_header',['datakota'=>$datakota,'datapengiriman'=>$datapengiriman]);
 		$this->load->view('admin/page_transaksi',['datatransaksi'=>$datatransaksi]);
 	}
 
@@ -139,55 +168,66 @@ class Admin extends CI_Controller {
 	{
 		$data = [
 			"noresi" => $this->input->post('noresi',true),
-			"layanan" => $this->input->post('layanan',true),
+			"idlayanan" => $this->input->post('idlayanan',true),
 			"asal" => $this->input->post('asal',true),
 			"tujuan" => $this->input->post('tujuan',true),
 			"pengirim" => $this->input->post('pengirim',true),
 			"tglpengiriman" => $this->input->post('tglpengiriman',true),
-			"namapenerima" => $this->input->post('namapenerima',true),
 			"status" => $this->input->post('status',true)
 
 		];
 		$this->M_admin->tambah_transaksi($data);
-		redirect('index.php/admin/transaksi');
+		redirect('admin/transaksi');
 	}
 
 	public function edittransaksi()
 	{
 		$noresi = $this->input->post('noresi',true);
 		$data = [
-			"layanan" => $this->input->post('layanan',true),
-			"asal" => $this->input->post('asal',true),
-			"tujuan" => $this->input->post('tujuan',true),
-			"pengirim" => $this->input->post('pengirim',true),
-			"tglpengiriman" => $this->input->post('tglpengiriman',true),
 			"namapenerima" => $this->input->post('namapenerima',true),
+			"tglpenerimaan" => $this->input->post('tglpenerimaan',true),
 			"status" => $this->input->post('status',true)
 		];
 		
 		$this->M_admin->edit_transaksi($noresi, $data);
-		redirect('index.php/admin/transaksi');
+		redirect('admin/transaksi');
 	}
 
 	public function hapustransaksi($noresi)
 	{
 
 		$this->M_admin->hapus_transaksi($noresi);
-		redirect('index.php/admin/transaksi');
+		redirect('admin/transaksi');
 
 	}
 
 	// LOGOUT
+	
 	public function Logout() {
         
 
         $cookie = $this->input->cookie('logged');
         if(isset($cookie)) {
-            delete_cookie('logged');
-            redirect('Loginadmin');
+			delete_cookie('logged');
+			session_destroy();
+            redirect('admin');
         } else {
             session_destroy();
-            redirect('Loginadmin');
+            redirect('admin');
         }
-    }
+	}
+	
+	public function Signin() {
+        $user = $this->M_admin->findUser();
+        if($user != null){
+                set_cookie('logged', $user[0]['namaadmin'], '3600');
+                $this->session->set_userdata('successLogin', $user[0]['namaadmin']);
+                redirect('admin');
+        } else {
+            $this->session->set_flashdata('falselogin','nodata');
+            redirect('admin');
+        }
+	}
+	
+
 }

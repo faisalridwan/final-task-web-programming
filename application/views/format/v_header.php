@@ -51,7 +51,7 @@
                             <a class="nav-link <?php if ($header == 6){ ?> active <?php } ?> " href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link <?php if ($header == 7){ ?> active <?php } ?> " href="<?= base_url('Loginadmin/index'); ?>">ADMIN </a>
+                            <a class="nav-link <?php if ($header == 7){ ?> active <?php } ?> " href="<?= base_url('admin'); ?>">ADMIN </a>
                         </li>
                     </ul>
                 </div>

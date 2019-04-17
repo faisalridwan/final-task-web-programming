@@ -60,15 +60,15 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kelas" name="email" value="<?php echo $d->email ?>" required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email" name="email" value="<?php echo $d->email ?>" required>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">No Telepon</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kelas" name="notlp" value="<?php echo $d->notlp ?>" required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="No Telepon" name="notlp" value="<?php echo $d->notlp ?>" required>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Alamat</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kelas" name="alamat" value="<?php echo $d->alamat ?>" required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Alamat" name="alamat" value="<?php echo $d->alamat ?>" required>
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Kota</label>

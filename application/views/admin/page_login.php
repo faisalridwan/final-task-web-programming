@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $title; ?></title>
+    <title>LOGIN ADMIN</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,14 +25,12 @@
                         <h2 class="form-title text-center">Sign In Admin</h2>
 
                         <?php
-                            if(isset($_SESSION['SuccessReg'])) {
-                                $this->load->view('Alerts/SuccessRegis');
-                            } else if(isset($_SESSION['falselogin'])) {
+                            if(isset($_SESSION['falselogin'])) {
                                 $this->load->view('Alerts/FailLogin');
                             }
                         ?>
                         
-                        <form action="<?php echo site_url('Loginadmin/Signin'); ?>" method="POST" class="" id="login-form" >
+                        <form action="<?php echo site_url('admin/signin'); ?>" method="POST" class="" id="login-form" >
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="useradmin" id="useradmin" placeholder="Username" required/>

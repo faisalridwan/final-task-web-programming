@@ -49,7 +49,7 @@
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput">Nama Kota</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Fakultas" name="namakota"required>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Kota" name="namakota"required>
         </div>
       </div>
       <div class="modal-footer">

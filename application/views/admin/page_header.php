@@ -44,20 +44,21 @@
 <nav class="navbar navbar-red navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php echo base_url('Loginadmin/index') ?>">ADMIN PAGE</a>
+      <a class="navbar-brand" href="<?php echo base_url('admin') ?>">ADMIN PAGE</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<?php echo base_url() ?>">Home</a></li>
-      <li><a href="<?php echo base_url('index.php/admin/pengguna') ?>">Pengguna</a></li>
-      <li><a href="<?php echo base_url('index.php/admin/kota') ?>">Kota</a></li>
-      <li><a href="<?php echo base_url('index.php/admin/transaksi') ?>">Transaksi</a></li>
+      <li><a href="<?php echo base_url('admin/pengguna') ?>">Pengguna</a></li>
+      <li><a href="<?php echo base_url('admin/kota') ?>">Kota</a></li>
+      <li><a href="<?php echo base_url('admin/transaksi') ?>">Transaksi</a></li>
+      <li><a href="<?php echo base_url('admin/admin') ?>">Admin</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right text-center">
       <li class="dropdown pull-right">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Akun
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="<?php echo base_url('Loginadmin/index') ?>"><?php echo $this->input->cookie('logged') ?></a></li>
+          <li><a href="<?php echo base_url('admin') ?>"><?php echo $this->input->cookie('logged') ?></a></li>
           <li class="active"><a href="<?php echo site_url('admin/Logout'); ?>">Log Out<span class="sr-only">(current)</span></a></li>
         </ul>
       </li>

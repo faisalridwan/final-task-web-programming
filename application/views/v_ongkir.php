@@ -12,19 +12,30 @@
                         <div class="form-group row pt-4 ">
                                 <label class="col-sm-2 col-form-label ">Asal</label>
                                 <div class="col-sm-10">
-                                    <input id="origin" type="text" value="" name="origin" class="form-control px-2" placeholder="Select province" autocomplete="off">
+                                    <input type="text" list="asallist" name="asal" class="form-control px-2" placeholder="Pilih Asal">
+                                    <datalist id="asallist">
+                                    <?php foreach ($datakota as $c ) {?>
+                                        <option value="<?php echo $c->namakota; ?>">
+                                    <?php } ?>
+                                    </datalist>
                                 </div>
-                            </div>
-                            <input id="origin_code" type="hidden" value="" name="origin_code" class="form-control">
-
+                            </div>                          
                             <div class="form-group row ">
-                                <label class=" col-sm-2  control-label  ">Tujuan</label>
+                                <label class=" col-sm-2 control-label">Tujuan</label>
                                 <div class="col-sm-10">
-                                    <input id="destination" type="text" value="" name="destination" class="form-control" placeholder="Select province" autocomplete="off">
-                                </div>
+                                    <input type="text" list="asallist" name="tujuan" class="form-control" placeholder="Pilih Tujuan">
+                                </div>  
                             </div>
-                            <input id="destination_code" type="hidden" value="" name="destination_code" class="form-control">
-
+                            <div class="form-group row ">
+                                <label class=" col-sm-2 control-label">Layanan</label>
+                                <div class="col-sm-10">
+                                <select class="form-control" id="formGroupExampleInput2" name="idlayanan" required>
+                                    <?php foreach ($datapengiriman as $c ) {?>
+                                        <option value="<?php echo $c->idlayanan ?>"> <?php echo $c->layanan;  ?></option>
+                                    <?php } ?>
+                                </select> 
+                                </div>  
+                            </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 control-label">Berat</label>
                                 <div class="col-sm-10">
@@ -69,14 +80,27 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md-12 text-right"><a id="btn-check" name="btn-check" class=" btn btn-check" href="javascript:void(0)">Cek Harga</a>
+                                <div class="col-md-12 text-right">
+                                <button type="button" id="btnongkir" class="btn btn-check"  data-toggle="modal" data-target="#exampleModal"><b>Cek Harga</b></button>
                                 </div>
                             </div>
                             
                     </form>
+                    <div class="boxongkir">
+
+                    </div>
                 </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#btnongkir").click(function(){
+                            $(".boxongkir").html("<table><tr><th>Service</th><th>Deskripsi</th><th>Tarif</th><th>Estimasi</th></tr><tr><td>REG</td><td>Regular</td><td>240000</td><td>3 - 6 hari</td></tr><tr><td>Cargo</td><td>Cargo per Kg (minimal 5Kg)</td><td>168000</td><td>3 - 6 hari</td></tr></table>");
+            
+                        });
+                    });
+                </script>
+                
             </div>
         </div>
                     <div class="container awb-result" id="awb-result"></div>   
