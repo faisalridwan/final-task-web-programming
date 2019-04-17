@@ -1,7 +1,9 @@
 
 
     <!-- MAIN CONTENT -->
-    <div class="jumbotron jumbotron-fluid bg-white">
+    <div class="jumbotron jumbotron-fluid bg-white" style="
+    padding-bottom: 0px;
+    margin-bottom: 0px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
@@ -23,7 +25,7 @@
                             <div class="form-group row ">
                                 <label class=" col-sm-2 control-label">Tujuan</label>
                                 <div class="col-sm-10">
-                                    <input type="text" list="asallist" name="tujuan" class="form-control" placeholder="Pilih Tujuan">
+                                    <input type="text" list="asallist" name="tujuan" class="form-control" placeholder="Pilih Tujuan" required>
                                 </div>  
                             </div>
                             <div class="form-group row ">
@@ -53,7 +55,7 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="input-group">
-                                                <input type="text" name="length" class="form-control" placeholder="L">
+                                                <input type="text" name="length" class="form-control" placeholder="L" required>
                                                 <div class="input-group-prepend">
                                                 <span class="input-group-text bg-white">cm</span>
 
@@ -63,7 +65,7 @@
 
                                         <div class="col-md-4">
                                             <div class="input-group">
-                                                <input type="text" name="width" class="form-control" placeholder="W">
+                                                <input type="text" name="width" class="form-control" placeholder="W" required>
                                                 <div class="input-group-prepend">
                                                 <span class="input-group-text bg-white">cm</span></div>
                                             </div>
@@ -71,7 +73,7 @@
 
                                         <div class="col-md-4">
                                             <div class="input-group">
-                                                <input type="text" name="height" class="form-control" placeholder="H">
+                                                <input type="text" name="height" class="form-control" placeholder="H" required>
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text bg-white">cm</span>
                                             </div>
@@ -82,7 +84,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-right">
-                                <button type="button" id="btnongkir" class="btn btn-check"  data-toggle="modal" data-target="#exampleModal"><b>Cek Harga</b></button>
+                                <button type="submit" id="btnongkir" class="btn btn-check"><b>Cek Harga</b></button>
                                 </div>
                             </div>
                             
@@ -95,7 +97,7 @@
                 <script type="text/javascript">
                     $(document).ready(function(){
                         $("#btnongkir").click(function(){
-                            $(".boxongkir").html("<table><tr><th>Service</th><th>Deskripsi</th><th>Tarif</th><th>Estimasi</th></tr><tr><td>REG</td><td>Regular</td><td>240000</td><td>3 - 6 hari</td></tr><tr><td>Cargo</td><td>Cargo per Kg (minimal 5Kg)</td><td>168000</td><td>3 - 6 hari</td></tr></table>");
+                            $(".boxongkir").html(<?php  $this->load->view('Alerts/dataongkir') ?>);
             
                         });
                     });

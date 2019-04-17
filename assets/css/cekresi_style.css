@@ -235,10 +235,6 @@ bottom {
 }
 
 .nodisp {
-	border: none;
-	background-color: inherit;
-	padding: 14px 28px;
+	border: white;
 	font-size: 16px;
-	cursor: pointer;
-	display: inline-block;
 }
