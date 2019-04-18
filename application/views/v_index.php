@@ -134,7 +134,7 @@
         <!-- CEK TARIF & TRACK RESI -->
 <section>
     <div class="ws-home-check">
-        <div class="container">
+        <div class="container pt-0">
             <div class="row justify-content-center">
                                     
                 <!-- CEK ONGKIR -->
@@ -250,7 +250,91 @@
     </div>
 </section>
 
+<section>
+    <div class="ws-home-fitur">
+        <div class="container">
+            <div class="__title text-center">
+                Kenapa SiCepat?
+            </div>
 
+            <div class="__sub-title text-center">
+                <span>
+                    SiCepat berkomitmen menjadi partner terpercaya di seluruh Indonesia. <br>Inilah 10 alasan tepat untuk memilih SiCepat
+                </span>
+            </div> 
+
+            <div class="fitur-content">               
+                <div class="fitur-slider slick-initialized slick-slider">
+                    <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>                   
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 3800px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+                                <div class="text-center slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 380px;">                      
+                                    <img src="<?= base_url('assets/img/fitur-1@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">15 Hours Delivery</div>                       
+                                        <div class="fitur-desc">Kiriman cepat 15 jam sampai<br>tanpa tambahan biaya apapun.</div>                   
+                                </div>
+                                    
+                                <div class="text-center slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-2@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Pickup Delivery</div>                       
+                                        <div class="fitur-desc">Minimal 5 paket atau setara dengan 5 kg<br>kami ambil ditempat Anda (waktu flexibel &amp; GRATIS).</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-3@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Timbangan Akurat</div>                       
+                                        <div class="fitur-desc">Berat lebih akurat dengan timbangan digital.</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-4@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Kerjasama Secara Kekeluargaan</div>                       
+                                        <div class="fitur-desc">Kami bertanggung jawab mewakili online shop Anda<br>untuk semua masalah pengiriman paket.</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-6@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Sistem Pembayaran yang Lebih Fleksibel &amp; Akurat</div>                       
+                                        <div class="fitur-desc">Pembayaran H+1 dengan rekap tagihan yang jelas.</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-5@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Layanan Ganti Rugi</div>                       
+                                        <div class="fitur-desc">Pergantian barang 1 kg maksimal Rp500.000,-<br>(maksimal 5 kg = Rp 2.500.000,-).</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-7@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Request Resi</div>                       
+                                        <div class="fitur-desc">Tracking status paket makin mudah bagi pemilik<br>online shop dengan software Request Resi.</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide07" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-8@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">SMS Resi</div>                       
+                                        <div class="fitur-desc">Kami yang akan mengirim nomor resi melalui SMS<br>langsung ke penerima paket.</div>                   
+                                </div>
+
+                                <div class="text-center slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide08" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-9@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Lebih Cepat</div>                       
+                                        <div class="fitur-desc">Layanan pengiriman reguler dalam waktu 1-2 hari.</div>                   
+                                </div>
+                                
+                                <div class="text-center slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide09" style="width: 380px;">                       
+                                    <img src="<?= base_url('assets/img/fitur-10@2x.png')?>" class="fitur-img" alt="Image">                       
+                                        <div class="fitur-title">Paket Double</div>                       
+                                        <div class="fitur-desc">Tidak akan ada pengiriman double karena mudah terdeteksi.</div>                   
+                                </div>
+                            </div>
+                        </div>                                                                                                                                                                                          
+                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;" aria-disabled="false">Next</button>
+                </div>           
+            </div>
+        </div>
+    </div>
+</section>
 
 <section>
         <div class="container">
