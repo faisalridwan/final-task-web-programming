@@ -21,7 +21,7 @@
                                         <img src="<?= base_url('assets/img/doc@2x.png')?>" width=50% > 
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="No resi">
+                                <input type="text" class="form-control" name="noresi" placeholder="No resi">
                             </div>
 
                             <div class="input-group">
@@ -30,7 +30,7 @@
                                         <img src="<?= base_url('assets/img/doc@2x.png')?>" width=50% > 
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="No resi">
+                                <input type="text" class="form-control"  placeholder="No resi">
                             </div>
 
                             <div class="input-group tambahresi">

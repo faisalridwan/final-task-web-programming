@@ -7,14 +7,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
-                    <form action="#" class="ws-form form-horizontal check-form " method="post">
+                    <form class="ws-form form-horizontal check-form " method="post">
                         <div class="pt-5 text-center ">
                             <img class="check-fee-icon" src="<?= base_url('assets/img/cek-ongkir@2x.png') ?>" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
                         </div>
                         <div class="form-group row pt-4 ">
                                 <label class="col-sm-2 col-form-label ">Asal</label>
                                 <div class="col-sm-10">
-                                    <input type="text" list="asallist" name="asal" class="form-control px-2" placeholder="Pilih Asal">
+                                    <input type="text" list="asallist" name="asal" class="form-control px-2" placeholder="Pilih Asal" required>
                                     <datalist id="asallist">
                                     <?php foreach ($datakota as $c ) {?>
                                         <option value="<?php echo $c->namakota; ?>">

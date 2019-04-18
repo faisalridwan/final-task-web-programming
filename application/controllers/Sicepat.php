@@ -13,7 +13,8 @@ class Sicepat extends CI_Controller {
 		$data["header"] = 1;
 		$this->load->view('format/v_header',$data);
 		$data_kota = $this->M_admin->Getkota_kode();
-		$this->load->view('v_index',['datakota'=>$data_kota]);
+		$datapengiriman = $this->M_admin->Getpengiriman_id();
+		$this->load->view('v_index',['datakota'=>$data_kota,'datapengiriman'=>$datapengiriman]);
 		$this->load->view('format/v_footer');
 	}
 

@@ -228,6 +228,11 @@ class Admin extends CI_Controller {
             redirect('admin');
         }
 	}
+
+	public function resi() {
+	$noresi = $this->input->post('noresi',true);
+	$this->M_admin->Gettransaksi_byresi()($noresi);
+		redirect('sicepat/transaksi');
 	
 
 }
