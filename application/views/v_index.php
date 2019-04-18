@@ -143,11 +143,11 @@
                         <img class="check-fee-icon" src="<?= base_url('assets/img/cek-ongkir@2x.png') ?>" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
                     </div>
 
-                    <form action="#" class="ws-form form-horizontal check-form" method="post" accept-charset="utf-8">
+                    <form class="ws-form form-horizontal check-form">
                         <div class="form-group ">
                             <label class=" col-sm-2  control-label  ">Asal</label>
                             <div class="col-sm-10">
-                                <input id="origin" type="text" value="" name="origin" class="form-control px-2" placeholder="Select province" autocomplete="off">
+                                <input type="text" class="form-control px-2" placeholder="Select province" required>
                             </div>
                         </div>
                         
@@ -155,14 +155,14 @@
                         <div class="form-group ">
                             <label class=" col-sm-2  control-label  ">Tujuan</label>
                             <div class="col-sm-10">
-                                <input id="destination" type="text" value="" name="destination" class="form-control" placeholder="Select province" autocomplete="off">
+                                <input  type="text" class="form-control" placeholder="Select province" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Berat</label>
                             <div class="col-sm-10">
                                 <div class="input-group">
-                                    <input type="text" name="weight" class="form-control" placeholder="00">
+                                    <input type="text" class="form-control" placeholder="00" required>
                                     <div class="input-group-addon pr-4 pt-3">Kg</div>
                                 </div>
                             </div>
@@ -174,21 +174,21 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="input-group">
-                                            <input type="text" name="length" class="form-control" placeholder="L">
+                                            <input type="text"class="form-control" placeholder="L" required>
                                             <div class="input-group-addon pr-4 pt-3">cm</div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="input-group">
-                                            <input type="text" name="width" class="form-control" placeholder="W">
+                                            <input type="text"class="form-control" placeholder="W" required>
                                             <div class="input-group-addon pr-4 pt-3">cm</div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="input-group">
-                                            <input type="text" name="height" class="form-control" placeholder="H">
+                                            <input type="text" class="form-control" placeholder="H" required>
                                             <div class="input-group-addon pr-4 pt-3">cm</div>
                                         </div>
                                     </div>
@@ -199,10 +199,22 @@
 
                         <div class="row">
                             <div class="col-md-12 text-right">
-                                <a class="btn btn-check" style=" margin-right: 80px;">Cek Harga</a>
+                            <button type="submit" id="btnongkir" class="btn btn-check" style=" margin-right: 80px;">Cek Harga</button>
                             </div>
                         </div>
                     </form>
+                    <div class="boxongkir">
+
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $("#btnongkir").click(function(){
+                                    $(".boxongkir").html(<?php  $this->load->view('Alerts/dataongkir') ?>);
+                    
+                                });
+                            });
+                        </script>
                 </div>
                 <!-- END CEK ONGKIR -->                    
                 <!-- CEK RESI -->
@@ -237,18 +249,7 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div class="__title text-center">
-            Kenapa SiCepat?
-        </div>
-        <div class="__sub-title text-center">
-            <span>
-                SiCepat berkomitmen menjadi partner terpercaya di seluruh Indonesia. Inilah 10 alasan tepat untuk memilih SiCepat.......
-            </span>
-        </div>
-    </div>
-</section>  
+
 
 
 <section>

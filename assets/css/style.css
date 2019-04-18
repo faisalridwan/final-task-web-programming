@@ -129,7 +129,7 @@ form {
 	margin-bottom: 70px;
 }
 
-.ws-home-page .ws-home-check {
+.ws-home-check {
 	background-color: #f9fafb;
 }
 
@@ -288,7 +288,7 @@ form {
 	margin-left: -15px;
 }
 
-.ws-home-page .ws-home-service {
+.ws-home-service {
 	background: #f9fafb;
 	padding-bottom: 70px;
 }
@@ -300,7 +300,7 @@ form {
 	justify-content: center;
 }
 
-.ws-home-page .ws-home-service .item-service a {
+.ws-home-service .item-service a {
 	padding: 0 10px;
 }
 
@@ -365,6 +365,95 @@ img.service-img-top {
 	border-radius: 5px;
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 	position: relative;
+}
+
+.fitur-content {
+	height: 200px;
+}
+
+.fitur-img {
+	display: inline;
+	margin-bottom: 26px;
+	width: 70px;
+	height: 70px;
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+
+.ws-home-fitur .fitur-title {
+	margin-bottom: 14px;
+	font-size: 15px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.6;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.fitur-desc {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	user-select: none;
+	touch-action: pan-y;
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.ws-home-fitur {
+	background: #fff;
+	padding-bottom: 50px;
+}
+
+.slick-initialized .slick-slide {
+	display: block;
+}
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
 }
 
 bottom {
@@ -577,3 +666,77 @@ form.label-inside input {
 }
 
 /* end of contact */
+
+
+/* SLIDER */
+
+.ws-home-fitur {
+	background: #fff;
+	padding-bottom: 50px;
+}
+
+.ws-home-fitur .fitur-content {
+	height: 200px;
+}
+
+.ws-home-fitur .fitur-img {
+	display: inline;
+	margin-bottom: 26px;
+	width: 70px;
+	height: 70px;
+}
+
+.ws-home-fitur .fitur-title {
+	margin-bottom: 14px;
+	font-size: 15px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.6;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.ws-home-fitur .fitur-desc {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.ws-home-fitur .fitur-arrow-left {
+	position: relative;
+	top: -115px;
+}
+
+.ws-home-fitur .fitur-arrow-right {
+	position: relative;
+	top: -115px;
+	float: right;
+}
+
+.ws-home-fitur .slick-initialized .slick-slide {
+	outline: none !important;
+}
+
+.ws-home-fitur .slick-prev {
+	left: 0px;
+	margin-top: -15px;
+}
+
+.ws-home-fitur .slick-next {
+	right: 15px;
+	margin-top: -15px;
+}
+
+.ws-home-fitur .slick-prev:before,
+.ws-home-fitur .slick-next:before {
+	color: #d0021b !important;
+	line-height: 0 !important;
+	font-size: 35px;
+}
