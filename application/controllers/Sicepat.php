@@ -21,18 +21,21 @@ class Sicepat extends CI_Controller {
 	public function cekresi()
 	{
 		$data["header"] = 2;
+		$noresi = $this->input->post('noresi',true);
+		$datapengiriman = $this->M_admin->Getpengiriman_id();
+		$dataresi = $this->M_admin->Gettransaksi_byresi($noresi);
 		$this->load->view('format/v_header',$data);
-		$this->load->view('v_cekresi');
+		$this->load->view('v_cekresi',['dataresi'=>$dataresi,'datapengiriman'=>$datapengiriman]);
 		$this->load->view('format/v_footer');
 	}
 
 	public function ongkir()
 	{
 		$data["header"] = 3;
-		$data_kota = $this->M_admin->Getkota_kode();
+		$datakota = $this->M_admin->Getkota_kode();
 		$datapengiriman = $this->M_admin->Getpengiriman_id();
 		$this->load->view('format/v_header',$data);
-		$this->load->view('v_ongkir',['datakota'=>$data_kota,'datapengiriman'=>$datapengiriman]);
+		$this->load->view('v_ongkir',['datakota'=>$datakota,'datapengiriman'=>$datapengiriman]);
 		$this->load->view('format/v_footer');
 
 		$this->session->set_flashdata('dataongkir','nodata');
@@ -58,6 +61,19 @@ class Sicepat extends CI_Controller {
 		$this->load->view('v_contact');
 		$this->load->view('format/v_footer');
 	}
+	public function tambahcontact()
+	{
+		
+		$data = [
+			"namacontact" => $this->input->post('namacontact',true),
+			"emailcontact" => $this->input->post('emailcontact',true),
+			"notlpcontact" => $this->input->post('notlpcontact',true),
+			"noresicontact" => $this->input->post('noresicontact',true),
+			"pesancontact" => $this->input->post('pesancontact',true),
+		];
+		$this->M_admin->tambah_contact($data);
+		redirect('sicepat/contact');
+	}
 	public function admin()
 	{
 		$data["header"] = 7;
@@ -70,5 +86,8 @@ class Sicepat extends CI_Controller {
 	{
 		$this->load->view('Alerts/dataongkir');
 	}
+	
+	
 
+	
 }

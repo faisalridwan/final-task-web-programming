@@ -9,7 +9,7 @@
         <div class="container"> 
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
-                    <form action="#" class="ws-form form-horizontal check-form " method="post">
+                    <form action="<?= base_url('Sicepat/cekresi/') ?> " class="ws-form form-horizontal check-form " method="post">
                             <div class="pt-5 text-center pb-5 ">
                                 <img class="check-fee-icon2" src="<?= base_url('assets/img/location@2x.png') ?>" width=8%> Cek Resi
                             </div>
@@ -21,7 +21,7 @@
                                         <img src="<?= base_url('assets/img/doc@2x.png')?>" width=50% > 
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" name="noresi" placeholder="No resi">
+                                <input type="text" class="form-control" name="noresi" placeholder="No resi" required>
                             </div>
 
                             <div class="input-group">
@@ -30,7 +30,7 @@
                                         <img src="<?= base_url('assets/img/doc@2x.png')?>" width=50% > 
                                     </span>
                                 </div>
-                                <input type="text" class="form-control"  placeholder="No resi">
+                                <input type="text" class="form-control" placeholder="No resi">
                             </div>
 
                             <div class="input-group tambahresi">
@@ -48,10 +48,23 @@
                                 </div>
 
                                 <div class="col-md-5">
-                                <button type="submit" id="btresi" class="btn btn-danger float-right"><b>Lacak</b></a>
+                                <button type="button" id="btnresi" class="btn btn-danger float-right"><b>Lacak</b></a>
                                 </div>   
                             </div>
-                    </form>       
+                    </form>    
+                    <div class="boxresi">
+
+                    </div>
+                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#btnresi").click(function(){
+                            $(".boxresi").html(<?php  $this->load->view('Alerts/dataresi') ?>);
+            
+                        });
+                    });
+                </script>
                 </div>   
             </div> 
         </div>  

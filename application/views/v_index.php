@@ -227,8 +227,7 @@
                     <form action="#" class="ws-form form-horizontal ws-full-lbl track-form" id="track-form" method="POST" accept-charset="utf-8">
                         <div class="row">
                             <div class="col-md-12 pt-3">
-                                <textarea id="textarea-awb" name="textarea-awb" class="form-control" cols="" rows=""></textarea>
-                                <label class="label-textarea pt-4">Cth. 123456789, 456789012</label>
+                                <textarea id="textarea-awb" name="textarea-awb" class="form-control" placeholder="Cth. 123456789, 456789012"></textarea>
                             </div>
                         </div>
                     </form>
@@ -388,7 +387,7 @@
             <!-- BUTTON -->
             <div class="row">
                 <div class="col-md-12 mb-5 text-center">
-                    <a id="btn-show-service" name="btn-show-service" class=" btn btn-show-service" href="#">Lihat Detail</a>
+                    <a id="btn-show-service" name="btn-show-service" class=" btn btn-show-service" href="<?= base_url('sicepat/service')?>">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -405,9 +404,4 @@
             </div>
     </div>
 </section>
-
-
-
-        
-   
 

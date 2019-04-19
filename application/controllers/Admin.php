@@ -40,10 +40,11 @@ class Admin extends CI_Controller {
 		];
 		$user = $this->M_admin->findUser();
 		
-        if($user != null){
+        if($user == null){
 			$this->M_admin->tambah_admin($data);
 			redirect('admin/admin');
         } else {
+			
 			redirect('admin/admin');
         }
 		
@@ -201,7 +202,7 @@ class Admin extends CI_Controller {
 
 	}
 
-	// LOGOUT
+	// LOG
 	
 	public function Logout() {
         
@@ -229,10 +230,7 @@ class Admin extends CI_Controller {
         }
 	}
 
-	public function resi() {
-	$noresi = $this->input->post('noresi',true);
-	$this->M_admin->Gettransaksi_byresi()($noresi);
-		redirect('sicepat/transaksi');
 	
+
 
 }

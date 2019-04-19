@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
-                    <form class="ws-form form-horizontal check-form " method="post">
+                    <form class="ws-form form-horizontal check-form" method="post">
                         <div class="pt-5 text-center ">
                             <img class="check-fee-icon" src="<?= base_url('assets/img/cek-ongkir@2x.png') ?>" style="margin-right: 17px; margin-bottom: 4px;">Cek Tarif
                         </div>
@@ -84,7 +84,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-right">
-                                <button type="submit" id="btnongkir" class="btn btn-danger float-right"><b>Cek Harga</b></button>
+                                <button type="button" id="btnongkir" class="btn btn-danger float-right"><b>Cek Harga</b></button>
                                 </div>
                             </div>
                             

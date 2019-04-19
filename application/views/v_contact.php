@@ -18,35 +18,35 @@
             <div class="container">           
                 <div class="row">               
                     <div class="col-md-4 contact-us-form" id="contact-us-form">
-                        <form action="http://sicepat.com/contactus" class="form-horizontal ws-form check-form label-inside" method="post" accept-charset="utf-8">
+                        <form action="<?= base_url('index.php/sicepat/tambahcontact/')?>" class="form-horizontal ws-form check-form label-inside" method="post" accept-charset="utf-8">
                             <div class="row">   
                                 <div class="col-md-12">
                                     <label class="contact-label">Nama<span style="color:#d0021b;"> *</span></label>
-                                        <input id="name" type="text" value="" name="name" class="form-control">
+                                        <input id="name" type="text" name="namacontact" class="form-control">
                                 </div>
                             </div>
                             
                             <div class="row">   
                                 <div class="col-md-12"><label class="contact-label">Email<span style="color:#d0021b;"> *</span></label>
-                                    <input id="email" type="text" value="" name="email" class="form-control">
+                                    <input id="email" type="email" name="emailcontact" class="form-control">
                                 </div>
                             </div>
                             
                             <div class="row">   
                                 <div class="col-md-12"><label class="contact-label">No Telfon<span style="color:#d0021b;"> *</span></label>
-                                    <input id="notelfon" type="text" value="" name="notelfon" class="form-control">
+                                    <input id="notelfon" type="text" name="notlpcontact" class="form-control">
                                 </div>
                             </div>
                         
                             <div class="row">   
                                 <div class="col-md-12"><label class="contact-label">No Resi</label>
-                                    <input id="noresi" type="text" value="" name="noresi" class="form-control">
+                                    <input id="noresi" type="text" name="noresicontact" class="form-control">
                                 </div>
                             </div>
                             
                             <div class="row">   
                                 <div class="col-md-12"><label class="contact-label">Pesan<span style="color:#d0021b;"> *</span></label>
-                                    <textarea id="message" name="message" class="form-control" cols="" rows=""></textarea>
+                                    <textarea id="message" name="pesancontact" class="form-control"></textarea>
                                 </div>
                             </div>
                                 
@@ -66,7 +66,7 @@
                             </div>
                     
                             <div class="btn-wrapper text-right">
-                                <a id="btn-send" name="btn-send" class=" btn btn-check" href="javascript:void(0)">Kirim Pesan</a>
+                                <button type="submit" id="btnongkir" class="btn btn-check" style=" margin-right: 80px;">Kirim Pesan</button>
                             </div>
                     
                         </form>

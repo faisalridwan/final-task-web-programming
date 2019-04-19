@@ -133,9 +133,16 @@ class M_admin extends CI_Model {
 	}
 
 	public function Gettransaksi_byresi($noresi){
-
-	$query = $this->db->get_where('transaksi', array('noresi' => $noresi), $limit, $offset);
+	$this->db->select('*');
+	$this->db->from('transaksi');
+	$this->db->where('noresi',$noresi);
+	$query = $this->db->get();
 	return $query->result();
+	}
+
+	public function tambah_contact($data)
+	{
+		$this->db->insert('contact', $data);
 	}
 
 }

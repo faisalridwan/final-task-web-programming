@@ -39,7 +39,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-      <center><h2>TAMBAH DATA Admin</h2></center>
+      <center><h2>Tambah Data Admin</h2></center>
       </div>
       <div class="modal-body">
       <!-- isi form ini -->

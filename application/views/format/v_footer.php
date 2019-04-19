@@ -138,7 +138,7 @@
                                 <input type="text" class="form-control"  placeholder="Nama" name="nama"   required>
                             </div>
                             <div class="form-group pr-5">
-                                <input type="text" class="form-control" placeholder="Email" name="email" required>
+                                <input type="email" class="form-control" placeholder="Email" name="email" required>
                             </div>
                             <div class="form-group pr-5">
                                 <input type="text" class="form-control"  placeholder="No Telepon" name="notlp"  required>
@@ -155,7 +155,7 @@
                                 </select>            
                             </div>
                             <div class="form-group pr-5">
-                                <input  type="submit" class="btn btn-block btn-danger" value="DAFTAR" style="background-color:#cd2028;">
+                                <input type="submit" class="btn btn-block btn-danger" value="DAFTAR" style="background-color:#cd2028;">
                             </div>
                             </form>
                         </div>
