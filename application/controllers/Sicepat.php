@@ -25,4 +25,9 @@ class Sicepat extends CI_Controller
 		$this->load->view('v_service');
 		$this->load->view('format/v_footer');
 	}
+	public function lokasi()
+	{
+		$this->load->view('v_lokasi');
+		$this->load->view('format/v_footer');
+	}
 }

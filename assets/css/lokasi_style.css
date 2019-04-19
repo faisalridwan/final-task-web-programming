@@ -1,0 +1,241 @@
+
+
+#btnGroupDrop1{
+	border-radius: 0px;
+}
+/* MAIN CSS */
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section {
+	min-height: 200px;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+form {
+	margin-block-end: 1em;
+}
+
+form {
+	display: block;
+	margin-top: 0em;
+}
+
+div {
+	display: block;
+}
+
+img {
+	vertical-align: middle;
+}
+
+img {
+	border: 0;
+}
+
+/* ICON CSS */
+
+.check-awb-icon {
+	width: 32px;
+	height: 31px;
+}
+
+.store-icon {
+	width: 118px;
+}
+
+.footer-icon {
+	width: 21px;
+}
+
+.ws-store-menu {
+	margin-bottom: 20px;
+}
+
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* NAVBAR CSS */
+
+.ws-header-container .navbar li.active a {
+	color: #fff;
+}
+
+.ws-header-container .navbar a {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+/* CONTAINER CSS */
+
+.check-awb-container .title {
+	background: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	padding-top: 77px;
+	padding-bottom: 22px;
+}
+
+.check-awb-container .check-awb-content {
+	background-color: #fff;
+	padding: 16px;
+	margin-bottom: 50px;
+}
+
+
+/* BUTTON CSS */
+
+.check-awb-container .check-awb-wrapper .btn-wrapper {
+	text-align: center !important;
+	margin-top: 20px;
+}
+
+.check-awb-container .check-awb-wrapper .btn-check {
+	border-radius: 3px;
+	background-color: #d0021b;
+	padding: 17px 60px;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.69;
+	letter-spacing: normal;
+	text-align: center;
+	border: none !important;
+	color: #ffffff;
+}
+
+/* FOOTER CSS */
+
+.ws-footer-page {
+	background-color: #283842;
+}
+
+.ws-footer-page .ws-footer-top {
+	background-color: #cd2028;
+	color: #FFFFFF;
+	padding-top: 40px;
+}
+
+.ws-store-title {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ws-footer-menu {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+.ws-menu-list {
+	font-size: 12px;
+	font-weight: normal;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.ws-menu-list li {
+	margin-bottom: 15px;
+}
+
+.ws-menu-list li a {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+}
+
+.contact-address-list td {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	color: #FFFFFF;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+.ws-footer-divider {
+	min-width: 100%;
+	background: #fff;
+	opacity: 0.15;
+	min-height: 2px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
+
+/* BOTTOM CSS */
+
+bottom {
+	color: #FFFFFF;
+	padding-bottom: 35px;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.nodisp {
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
