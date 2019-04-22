@@ -1,9 +1,7 @@
 
 
     <!-- MAIN CONTENT -->
-    <div class="jumbotron jumbotron-fluid bg-white" style="
-    padding-bottom: 0px;
-    margin-bottom: 0px;">
+    <div class="jumbotron jumbotron-fluid bg-white" style="padding-bottom: 0px; margin-bottom: 0px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
@@ -107,3 +105,4 @@
         </div>  
             <img src="<?= base_url('assets/img/background2.png'); ?>" class="img-responsive" style="width:100% !important; opacity:0.7;">
     </div>
+
