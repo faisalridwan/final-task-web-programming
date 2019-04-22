@@ -470,6 +470,12 @@ bottom {
 /* end of index */
 
 
+
+
+
+
+
+
 /* CEK RESI */
 
 .active {
@@ -574,7 +580,318 @@ li .active a {
 
 
 
+/* SERVICE */
 
+.service-title-top {
+	background-color: #fff;
+}
+
+.service-title-top .title1 {
+	background: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	padding-top: 77px;
+	padding-bottom: 22px;
+}
+
+.service-title-top .title2 {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #676767;
+	margin-bottom: 70px;
+}
+
+.serv-container .service-wrap {
+	display: inline-block;
+	margin-top: 80px;
+}
+
+.serv-container .service-flex {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.serv-container .service-item-wrap {
+	padding: 0 20px;
+}
+
+.serv-container .service-item {
+	position: relative;
+	width: 287px;
+	min-height: 433px;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	margin: 0 auto;
+	margin-bottom: 100px !important;
+}
+
+.serv-container .service-item img.service-img-top {
+	position: absolute;
+	top: -81px;
+	right: 94px;
+	width: 107px;
+	height: 118px;
+}
+
+.serv-container .service-item .service-item-top {
+	height: 166px;
+	padding-top: 43px;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	background-color: #f9fafb;
+}
+
+.serv-container .service-item .service-item-top .service-item-title {
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.28;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.serv-container .service-item .serv-line {
+	width: 34px;
+	height: 3px;
+	background-color: #d0021b;
+	margin: 0 auto;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+.serv-container .service-item .service-item-top .service-item-title2 {
+	font-size: 13px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: #676767;
+}
+
+.serv-container .service-item .service-item-body {
+	padding: 1px 26px 0 26px;
+}
+
+.serv-container .service-wrap {
+	display: inline-block;
+	margin-top: 80px;
+}
+
+.serv-container ul {
+	content: "";
+	display: table;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.serv-container li {
+	list-style-type: none;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.serv-container .service-item.big-item {
+	width: 480px !important;
+	min-height: 531px !important;
+	margin-top: 100px !important;
+	padding-bottom: 20px;
+}
+
+.serv-container .service-item.service-item.big-item .big-item-title {
+	position: absolute;
+	font-size: 19px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.89;
+	letter-spacing: normal;
+	color: #000000;
+	width: 480px;
+	margin-top: -140px;
+}
+
+.serv-container .service-item.big-item .service-item-top {
+	height: 196px !important;
+	padding-top: 61px !important;
+}
+
+.serv-container .service-item.big-item .service-item-top .service-item-title {
+	font-size: 24px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.96;
+	letter-spacing: normal;
+	text-align: center;
+	color: #5476e6;
+}
+
+.serv-container .service-item.big-item .serv-line {
+	background: #000;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+.serv-container .service-item.big-item .service-item-top .service-item-title2 {
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	text-align: center;
+	color: #db5454;
+}
+
+.serv-container .service-item .service-item-body {
+	padding: 1px 26px 0 26px;
+}
+
+.serv-container .service-item .service-item-body tr td:first-child {
+	padding-right: 27px;
+}
+
+.serv-container .service-item .service-item-body td {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: #4a4a4a;
+	vertical-align: top;
+	padding-top: 23px;
+}
+
+.serv-container .service-item .service-item-body tr td img {
+	width: 18.9px;
+	height: 18.5px;
+}
+
+.serv-container li {
+	list-style-type: none;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.serv-container .service-item.big-item {
+	width: 480px !important;
+	min-height: 531px !important;
+	margin-top: 100px !important;
+	padding-bottom: 20px;
+}
+
+.serv-container .service-item table td li {
+	list-style-position: outside;
+	margin-left: 1.3em;
+	list-style-type: square !important;
+	margin-top: 10px;
+}
+
+.serv-container .btn-join-service {
+	border-radius: 3px;
+	background-color: #d0021b;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.69;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #ffffff;
+	padding: 17px 25px;
+}
+
+.serv-container .service-item.big-item img.service-img-top {
+	top: -81px !important;
+	right: 193px !important;
+}
+
+/* end of service */
+
+
+
+
+
+
+
+/* LOKASI */
+
+.ws-location-page .location-title {
+	background: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	padding-top: 77px;
+	padding-bottom: 22px;
+}
+
+.ws-location-page .location-sub-title {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #676767;
+	margin-bottom: 70px;
+}
+
+.ws-location-page .location-content .nav-pills {
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	margin: auto;
+}
+
+.nav-justified {
+	width: 100%;
+}
+
+.ws-location-page .location-content .nav>li.active {
+	border-top-color: #fff;
+	background-color: #fff;
+}
+
+.nav-justified>li {
+	display: table-cell;
+	width: 1%;
+}
+
+.nav-justified>li {
+	float: none;
+}
+
+/* end of lokasi */
 
 
 
