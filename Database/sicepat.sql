@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Apr 2019 pada 05.16
+-- Waktu pembuatan: 22 Apr 2019 pada 15.25
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.2
 
@@ -41,7 +41,31 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`idadmin`, `namaadmin`, `useradmin`, `passadmin`) VALUES
 (5, 'as', '12', 'f970e2767d0cfe75876ea857f92e31'),
-(9, 'Faisal Ridwan siregar', 'faisal', 'faisal');
+(9, 'Faisal Ridwan siregar', 'faisal', 'faisal'),
+(10, '123', '123', '123'),
+(12, '2', '2', '2'),
+(13, '3', '3', '3');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `contact`
+--
+
+CREATE TABLE `contact` (
+  `namacontact` varchar(30) NOT NULL,
+  `emailcontact` varchar(30) NOT NULL,
+  `notlpcontact` int(15) NOT NULL,
+  `noresicontact` int(15) NOT NULL,
+  `pesancontact` varchar(70) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `contact`
+--
+
+INSERT INTO `contact` (`namacontact`, `emailcontact`, `notlpcontact`, `noresicontact`, `pesancontact`) VALUES
+('faisal', 'faisalridwansiregar@gmail.com', 211221, 121221, 'sadawsd');
 
 -- --------------------------------------------------------
 
@@ -84,7 +108,8 @@ CREATE TABLE `pengguna` (
 
 INSERT INTO `pengguna` (`id`, `nama`, `email`, `notlp`, `kodekota`, `alamat`) VALUES
 (1, 'Ucoks BABA', 'ucok@ucok.com', 82278756, 'SLO', 'Jl Bojong Soang'),
-(3, 'Faisal Ridwan Siregar', 'faisalridwansiregar@gmail.com', 2147483647, 'JKT', 'Jl Bojong Soang');
+(3, 'Faisal Ridwan Siregar', 'faisalridwansiregar@gmail.com', 2147483647, 'JKT', 'Jl Bojong Soang'),
+(4, 'hana', 'hana@g.c', 899999, 'SLO', '21121');
 
 -- --------------------------------------------------------
 
@@ -95,18 +120,19 @@ INSERT INTO `pengguna` (`id`, `nama`, `email`, `notlp`, `kodekota`, `alamat`) VA
 CREATE TABLE `pengiriman` (
   `idlayanan` int(1) NOT NULL,
   `layanan` varchar(20) NOT NULL,
-  `biaya` int(11) NOT NULL
+  `tarif` int(11) NOT NULL,
+  `estimasi` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pengiriman`
 --
 
-INSERT INTO `pengiriman` (`idlayanan`, `layanan`, `biaya`) VALUES
-(1, 'Regular', 6000),
-(2, 'Best', 8000),
-(3, 'Cargo', 15000),
-(4, 'Cash On Delivery', 20000);
+INSERT INTO `pengiriman` (`idlayanan`, `layanan`, `tarif`, `estimasi`) VALUES
+(1, 'Regular', 6000, '3 - 4 Hari'),
+(2, 'Best', 8000, '1 - 2 Hari'),
+(3, 'Cargo', 15000, '5 - 8 Hari'),
+(4, 'Cash On Delivery', 20000, '3 - 4 Hari');
 
 -- --------------------------------------------------------
 
@@ -182,7 +208,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `idadmin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idadmin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
