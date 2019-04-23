@@ -273,7 +273,7 @@
                                             
                                             <div class="row">               
                                                 <div class="col-md-12 text-center">
-                                                    <a id="btn-join" name="btn-join" class=" btn btn-join-service" href="javascript:void(0)">Gabung Sekarang</a>               
+                                                <button type="button" id="btn-join" name="btn-join" class=" btn btn-join"  data-toggle="modal" data-target="#exampleModal"><b>Gabung Sekarang</b></button>               
                                                 </div>           
                                             </div>       
                                 </div>   

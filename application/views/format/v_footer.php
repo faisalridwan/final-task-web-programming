@@ -9,32 +9,32 @@
                                 <div class="ws-footer-menu">
                                     INFORMASI </div>
                                 <ul class="ws-menu-list">
-                                    <li><a href="http://sicepat.com/faq">FAQ</a></li>
-                                    <li><a href="http://sicepat.com/statusSicepat">Kode Status Pengantaran Paket</a></li>
-                                    <li><a href="http://sicepat.com/termCond">Terms &amp; Conditions</a></li>
-                                    <li><a href="http://sicepat.com/privacyPolicy">Privacy Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Kode Status Pengantaran Paket</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3" style="width:23%;">
                                 <div class="ws-footer-menu">
                                     PRODUK &amp; LAYANAN </div>
                                 <ul class="ws-menu-list">
-                                    <li><a href="http://sicepat.com/service">Regular</a></li>
-                                    <li><a href="http://sicepat.com/service">BEST</a></li>
-                                    <li><a href="http://sicepat.com/service">Cargo</a></li>
-                                    <li><a href="http://sicepat.com/service">Cash On Delivery</a></li>
-                                    <li><a href="http://sicepat.com/service">Sicepat Go</a></li>
-                                    <li><a href="http://sicepat.com/service">Sicepat Syariah</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">Regular</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">BEST</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">Cargo</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">Cash On Delivery</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">Sicepat Go</a></li>
+                                    <li><a href="<?= base_url('Sicepat/service'); ?>">Sicepat Syariah</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-2" style="width:17%;">
                                 <div class="ws-footer-menu">
                                     IKUTI KAMI </div>
                                 <ul class="ws-menu-list">
-                                    <li><a href="http://facebook.com/sicepatexpress">Facebook</a></li>
-                                    <li><a href="https://twitter.com/sicepat_ekspres">Twitter</a></li>
-                                    <li><a href="https://www.instagram.com/sicepat_ekspres">Instagram</a></li>
-                                    <li><a href="https://www.youtube.com/channel/UC9DIPyaNoShFJ5oKsrv7AVg">Youtube</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Youtube</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3" style="width:30%;">

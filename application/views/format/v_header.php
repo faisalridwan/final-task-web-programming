@@ -32,11 +32,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+
                 
-                    <ul class="nav nav-pills">
+                    <ul class="navbar-nav">
                         <li class="nav-item <?php if ($header == 1){ ?> active <?php } ?>">
-                            <a class="nav-link wit" href="<?= base_url(); ?>">HOME </a>
+                            <a class="nav-link" href="<?= base_url(); ?>">HOME </a>
                         </li>
                         <li class="nav-item <?php if ($header == 2){ ?> active <?php } ?>">
                             <a class="nav-link " href="<?= base_url('Sicepat/cekresi'); ?>">CEK RESI </a>
@@ -57,7 +57,7 @@
                             <a class="nav-link" href="<?= base_url('admin'); ?>">ADMIN </a>
                         </li>
                     </ul>
-                </div>
+        
             </div>
             <div class="col-md-2 col-sm-1 hotilang">
                 <div class=" hotilang">Hotline</div>
