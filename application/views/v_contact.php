@@ -71,7 +71,7 @@
                     
                         </form>
                         
-                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=onload&amp;hl=en" async="" defer=""></script>               
+                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=onload&amp;hl=en"></script>               
                     </div>               
                     
                     <div class="col-md-4">                   

@@ -135,7 +135,7 @@
                         <div class="col-md-6 ">
                         <form method="post" action="<?= base_url('index.php/admin/tambahpengguna/')?>">
                             <div class="form-group pr-5">
-                                <input type="text" class="form-control"  placeholder="Nama" name="nama"   required>
+                                <input type="text" class="form-control"  placeholder="Nama*" name="nama"   required>
                             </div>
                             <div class="form-group pr-5">
                                 <input type="email" class="form-control" placeholder="Email" name="email" required>

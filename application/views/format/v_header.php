@@ -15,12 +15,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/format/header.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/format/footer.css'); ?>">
-    
-
-
 
 </head>
-<!--  -->
 <body>
     <!-- NAVBAR -->
     <section class="shadow-sm mb-1">
@@ -32,8 +28,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-                
                     <ul class="navbar-nav">
                         <li class="nav-item <?php if ($header == 1){ ?> active <?php } ?>">
                             <a class="nav-link" href="<?= base_url(); ?>">HOME </a>
@@ -65,7 +59,6 @@
                     <div class=" text-danger hotilang">021-5020-0050</div>
                 </b>
             </div>
-        
     </nav>
     </div>
     </section>

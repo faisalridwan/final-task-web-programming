@@ -37,9 +37,9 @@
             <td><?php echo $d->status ?></td>
             
 
-              <!--BUTTON EDIT TRANSAKSI-->
+              <!--BUTTON EDIT -->
               <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->noresi ?>"><i class="fas fa-user-edit"></i></button></td>
-              <!--BUTTON HAPUS --- ISI LENGKAPI BUTTON INI -->
+              <!--BUTTON HAPUS -->
               <td><a type="button" class="btn btn-danger"  href="<?= base_url('index.php/admin/hapustransaksi/' .$d->noresi)?>" onClick="return confirm('Apakah Anda Yakin?')" ><i class="fas fa-user-times"></i></a></td>
             </form>
           </tr>
@@ -58,7 +58,6 @@
       <center><h2>TAMBAH DATA TRANSAKSI</h2></center>
       </div>
       <div class="modal-body">
-      <!-- isi form ini -->
       <form method="POST" action="<?php echo base_url('index.php/admin/tambahtransaksi/')?>">
       <div class="form-group">
             <label for="formGroupExampleInput">No Resi</label>
@@ -126,7 +125,6 @@
         <center><h2>EDIT DATA TRANSAKSI </h2></center>
         </div>
         <div class="modal-body">
-        <!-- isi form ini -->
         <form method="post" action="<?= base_url('index.php/Admin/edittransaksi/' .$d->noresi)?>">
           <div class="form-group">
           <label for="formGroupExampleInput2">No Resi</label>

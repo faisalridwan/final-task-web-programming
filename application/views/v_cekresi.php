@@ -31,9 +31,6 @@
                                 </div>   
                             </div>
                     </form>    
-                    
-                    
-                    
                 </div>
                 <div id="myDIV">
 

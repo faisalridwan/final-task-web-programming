@@ -242,7 +242,7 @@ class Admin extends CI_Controller {
 	public function hapuscontact($idcontact)
 	{
 
-		$this->M_admin->hapus_contact($idconatct);
+		$this->M_admin->hapus_contact($idcontact);
 		redirect('admin/contact');
 
 	}

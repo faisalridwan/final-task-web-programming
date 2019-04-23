@@ -23,7 +23,7 @@
             
             <!--BUTTON EDIT-->
             <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->idadmin ?>"><i class="fas fa-user-edit"></i></button></td>
-            <!--BUTTON HAPUS --- ISI LENGKAPI BUTTON INI -->
+            <!--BUTTON HAPUS -->
             <td><a type="button" class="btn btn-danger"  href="<?php echo base_url('index.php/admin/hapusadmin/'.$d->idadmin)?>" onClick="return confirm('Apakah Anda Yakin Hapus?')" ><i class="fas fa-user-times"></i></a></td>
           </tr>
           <?php } ?>
@@ -42,7 +42,6 @@
       <center><h2>Tambah Data Admin</h2></center>
       </div>
       <div class="modal-body">
-      <!-- isi form ini -->
       <form method="POST" action="<?php echo base_url('index.php/admin/tambahadmin/')?>">
         <div class="form-group">
           <label for="formGroupExampleInput">Nama Admin</label>
@@ -77,7 +76,6 @@
         <center><h2>Edit Data <?php echo $d->idadmin ?> </h2></center>
         </div>
         <div class="modal-body">
-        <!-- isi form ini -->
         <form method="post" action="editadmin">
         <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="Id Admin" name="idadmin" value="<?php echo $d->idadmin ?>"  required>
         <label for="formGroupExampleInput">Nama Admin</label>

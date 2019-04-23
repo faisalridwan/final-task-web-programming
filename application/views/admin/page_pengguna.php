@@ -19,7 +19,6 @@
         <tbody>
           <?php $no=1; foreach ($datapengguna as $d ) {?>
           <tr>
-        <!--HINT UNTUK MENGHAPUS USER KALIAN DAPAT MENGGUNAKAN FORM, MENGGUNAKAN ANCHOR ATAU HREF PADA BUTTON-->
             <form action="">
               <td><?php echo $no++ ?></td>
               <td><?php echo $d->nama ?></td>
@@ -31,7 +30,7 @@
 
               <!--BUTTON EDIT Pengguna-->
               <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->id ?>"><i class="fas fa-user-edit"></i></button></td>
-              <!--BUTTON HAPUS --- ISI LENGKAPI BUTTON INI -->
+              <!--BUTTON HAPUS -->
               <td><a type="button" class="btn btn-danger"  href="<?= base_url('index.php/admin/hapuspengguna/' .$d->id)?>" onClick="return confirm('Apakah Anda Yakin?')" ><i class="fas fa-user-times"></i></a></td>
             </form>
           </tr>
@@ -51,7 +50,6 @@
         <center><h2>EDIT DATA PENGGUNA </h2></center>
         </div>
         <div class="modal-body">
-        <!-- isi form ini -->
         <form method="post" action="<?= base_url('index.php/Admin/editpengguna/' .$d->id)?>">
         <input type="hidden" class="form-control" id="formGroupExampleInput" placeholder="Nim" name="id" value="<?php echo $d->id ?>"  required>
           <div class="form-group">

@@ -22,7 +22,7 @@
             <td><?php echo $d->namakota  ?></td>
             <!--BUTTON EDIT-->
             <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?php echo $d->kodekota ?>"><i class="fas fa-user-edit"></i></button></td>
-            <!--BUTTON HAPUS --- ISI LENGKAPI BUTTON INI -->
+            <!--BUTTON HAPUS -->
             <td><a type="button" class="btn btn-danger"  href="<?php echo base_url('index.php/admin/hapuskota/'.$d->kodekota)?>" onClick="return confirm('Apakah Anda Yakin Hapus?')" ><i class="fas fa-user-times"></i></a></td>
           </tr>
           <?php } ?>
@@ -41,7 +41,6 @@
       <center><h2>TAMBAH DATA KOTA</h2></center>
       </div>
       <div class="modal-body">
-      <!-- isi form ini -->
       <form method="POST" action="<?php echo base_url('index.php/admin/tambahkota/')?>">
         <div class="form-group">
           <label for="formGroupExampleInput">Kode Kota</label>
@@ -72,7 +71,6 @@
         <center><h2>Edit Data <?php echo $d->namakota ?> </h2></center>
         </div>
         <div class="modal-body">
-        <!-- isi form ini -->
         <form method="post" action="editkota">
         <label for="formGroupExampleInput">Kode Kota</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Kode Kota" name="kodekota" value="<?php echo $d->kodekota ?>"  required>
