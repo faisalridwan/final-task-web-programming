@@ -74,6 +74,9 @@ class Sicepat extends CI_Controller {
 		$this->M_admin->tambah_contact($data);
 		redirect('sicepat/contact');
 	}
+
+	
+
 	public function admin()
 	{
 		$data["header"] = 7;

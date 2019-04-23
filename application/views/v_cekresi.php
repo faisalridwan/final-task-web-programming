@@ -4,7 +4,7 @@
 
     <div class="jumbotron jumbotron-fluid bg-white" style="margin-bottom: 0px;padding-bottom: 0px;">
         <div class="container"> 
-            <di class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5 ws-home-check-left">
                     <form action="<?= base_url('Sicepat/cekresi/') ?> " class="ws-form form-horizontal check-form " method="post">
                             <div class="pt-5 text-center pb-5 ">
@@ -35,70 +35,19 @@
                     
                     
                 </div>
-                <div class="boxresi"  id="myDIV" style="display:none;">
-                    <div class="container">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">No Resi</th>
-                                    <th class="text-center">Layanan</th>
-                                    <th class="text-center">Asal</th>
-                                    <th class="text-center">Tujuan</th>
-                                    <th class="text-center">Nama Pengirim</th>
-                                    <th class="text-center">Tanggal Pengiriman</th>
-                                    <th class="text-center">Nama Penerima</th>
-                                    <th class="text-center">Tanggal Penerima</th>
-                                    <th class="text-center">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php foreach ($dataresi as $c ) {?>
-                                <tr>          
-                                    <td class="hidden-xs">
-                                        <?php echo $c->noresi;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->idlayanan;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->asal;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->tujuan;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->pengirim;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->tglpengiriman;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->namapenerima;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->tglpenerimaan;?>
-                                    </td>
-                                    <td class="hidden-xs">
-                                        <?php echo $c->status;?>
-                                    </td>
-                                </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
+                <div id="myDIV">
+
+                </div>
+
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
                     <script>
                         function myFunction() {
                         var x = document.getElementById("myDIV");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
+                        x.innerHTML=' <div class="container"> <table class="table table-bordered"> <thead> <tr> <th class="text-center">No Resi</th> <th class="text-center">Layanan</th> <th class="text-center">Asal</th> <th class="text-center">Tujuan</th> <th class="text-center">Nama Pengirim</th> <th class="text-center">Tanggal Pengiriman</th> <th class="text-center">Nama Penerima</th> <th class="text-center">Tanggal Penerima</th> <th class="text-center">Status</th> </tr> </thead> <tbody> <?php foreach ($dataresi as $c ) {?> <tr> <td class="hidden-xs"> <?php echo $c->noresi;?> </td> <td class="hidden-xs"> <?php echo $c->layanan;?> </td> <td class="hidden-xs"> <?php echo $c->asal;?> </td> <td class="hidden-xs"> <?php echo $c->tujuan;?> </td> <td class="hidden-xs"> <?php echo $c->pengirim;?> </td> <td class="hidden-xs"> <?php echo $c->tglpengiriman;?> </td> <td class="hidden-xs"> <?php echo $c->namapenerima;?> </td> <td class="hidden-xs"> <?php echo $c->tglpenerimaan;?> </td> <td class="hidden-xs"> <?php echo $c->status;?> </td> </tr> <?php } ?> </tbody> </table> </div>';
+                        
                         }
                     </script>
-                </div>   
-            </div> 
+                </div>
         </div>  
             <img src="<?= base_url('assets/img/background2.png'); ?>" class="img-responsive" style="width:100% !important; opacity:0.7;">        
     </div>

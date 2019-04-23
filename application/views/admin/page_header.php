@@ -52,6 +52,7 @@
       <li><a href="<?php echo base_url('admin/kota') ?>">Kota</a></li>
       <li><a href="<?php echo base_url('admin/transaksi') ?>">Transaksi</a></li>
       <li><a href="<?php echo base_url('admin/admin') ?>">Admin</a></li>
+      <li><a href="<?php echo base_url('admin/contact') ?>">Contact</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right text-center">
       <li class="dropdown pull-right">

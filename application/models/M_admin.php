@@ -135,14 +135,30 @@ class M_admin extends CI_Model {
 	public function Gettransaksi_byresi($noresi){
 	$this->db->select('*');
 	$this->db->from('transaksi');
+	$this->db->join('pengiriman','pengiriman.idlayanan=transaksi.idlayanan','LEFT OUTER');
 	$this->db->where('noresi',$noresi);
 	$query = $this->db->get();
 	return $query->result();
 	}
 
+	// CONTACT
+
+	public function Getcontact_id(){
+		$this->db->select('*');
+		$this->db->from('contact');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	public function tambah_contact($data)
 	{
 		$this->db->insert('contact', $data);
+	}
+
+	public function hapus_contact($idcontact)
+	{
+		$this->db->where('idcontact',$idcontact);
+		$this->db->delete('contact');
 	}
 
 }

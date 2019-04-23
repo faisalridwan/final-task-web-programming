@@ -25,7 +25,27 @@
 	padding: 10px 15px;
 }
 
+
+
 .active {
-	color: #fff;
 	background-color: #cd2028;
+
+
+}
+
+.nav>li>a {
+
+	margin-top: 22px;
+	margin-bottom: 15px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: white;
+}
+
+li .active a {
+	color: #ffffff;
 }

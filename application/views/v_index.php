@@ -2,7 +2,7 @@
     <!-- CAROUSEL -->
 
 <section>
-    <div class="jumbotron jumbotron-fluid " style="background-color:#cd2028;">
+    <div class="jumbotron jumbotron-fluid " style="background-color:#cd2028;margin-bottom: 0px;">
         
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -133,7 +133,7 @@
 
         <!-- CEK TARIF & TRACK RESI -->
 <section>
-    <div class="ws-home-check">
+    <div class="ws-home-check" style="padding-top: 60px;">
         <div class="container pt-0">
             <div class="row justify-content-center">
                                     

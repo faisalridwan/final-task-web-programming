@@ -134,18 +134,18 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Nama Penerima</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Penerima" name="namapenerima" value="<?php echo $d->namapenerima ?>" required>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nama Penerima" name="namapenerima" value="<?php echo $d->namapenerima ?>">
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Tgl Penerimaan</label>
-            <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Penerimaan" name="tglpenerimaan" value="<?php echo $d->tglpenerimaan ?>" required>
+            <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Tanggal Penerimaan" name="tglpenerimaan" value="<?php echo $d->tglpenerimaan ?>">
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Status</label>
             <select class="form-control" id="formGroupExampleInput2" name="status" required>
               <option value="SHIPMENT RECEIVED" <?php if ( "SHIPMENT RECEIVED" == $d->status)echo 'selected';?> >SHIPMENT RECEIVED</option>          
               <option value="SHIPMENT PICKED" <?php if ( "SHIPMENT PICKED" == $d->status)echo 'selected';?> >SHIPMENT PICKED</option>
-              <option value="ON TRANSIT" <?php if ( "ON TRANSITt" == $d->status)echo 'selected';?> >ON TRANSIT</option>
+              <option value="ON TRANSIT" <?php if ( "ON TRANSIT" == $d->status)echo 'selected';?> >ON TRANSIT</option>
               <option value="WITH DELIVERY COURIER" <?php if ( "WITH DELIVERY COURIER" == $d->status)echo 'selected';?> >WITH DELIVERY COURIER</option>
               <option value="DELIVERED" <?php if ( "DELIVERED" == $d->status)echo 'selected';?> >DELIVERED</option>
             </select> 

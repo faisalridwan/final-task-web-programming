@@ -1,8 +1,5 @@
 /* INDEX */
 
-section {
-	min-height: 200px;
-}
 
 div {
 	display: block;
@@ -478,14 +475,9 @@ bottom {
 
 /* CEK RESI */
 
-.active {
-	background-color: #cd2028;
-	padding-bottom: 10px;
-}
 
-li .active a {
-	color: #ffffff;
-}
+
+
 
 .check-fee-icon2 {
 	width: 35px;

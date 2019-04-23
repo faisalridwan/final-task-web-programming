@@ -230,6 +230,23 @@ class Admin extends CI_Controller {
         }
 	}
 
+	// CONTACT
+
+	public function contact()
+	{
+		$datacontact = $this->M_admin->Getcontact_id();
+		$this->load->view('admin/page_header');
+		$this->load->view('admin/page_contact',['datacontact'=>$datacontact]);
+	}
+
+	public function hapuscontact($idcontact)
+	{
+
+		$this->M_admin->hapus_contact($idconatct);
+		redirect('admin/contact');
+
+	}
+
 	
 
 
