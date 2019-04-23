@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Apr 2019 pada 15.25
+-- Waktu pembuatan: 23 Apr 2019 pada 14.21
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.2
 
@@ -40,11 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`idadmin`, `namaadmin`, `useradmin`, `passadmin`) VALUES
-(5, 'as', '12', 'f970e2767d0cfe75876ea857f92e31'),
 (9, 'Faisal Ridwan siregar', 'faisal', 'faisal'),
-(10, '123', '123', '123'),
-(12, '2', '2', '2'),
-(13, '3', '3', '3');
+(14, 'admin', 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -53,6 +50,7 @@ INSERT INTO `admin` (`idadmin`, `namaadmin`, `useradmin`, `passadmin`) VALUES
 --
 
 CREATE TABLE `contact` (
+  `idcontact` int(30) NOT NULL,
   `namacontact` varchar(30) NOT NULL,
   `emailcontact` varchar(30) NOT NULL,
   `notlpcontact` int(15) NOT NULL,
@@ -64,8 +62,9 @@ CREATE TABLE `contact` (
 -- Dumping data untuk tabel `contact`
 --
 
-INSERT INTO `contact` (`namacontact`, `emailcontact`, `notlpcontact`, `noresicontact`, `pesancontact`) VALUES
-('faisal', 'faisalridwansiregar@gmail.com', 211221, 121221, 'sadawsd');
+INSERT INTO `contact` (`idcontact`, `namacontact`, `emailcontact`, `notlpcontact`, `noresicontact`, `pesancontact`) VALUES
+(2, 'Sasuke', 'sasuke@sasuke.com', 2147483647, 10000456, 'Semoga barang saya cepat sampai'),
+(3, 'Gaara', 'gaara@gmail.com', 897654312, 10000789, 'Kenapa barang saya belum sampai sampai ya ?');
 
 -- --------------------------------------------------------
 
@@ -108,8 +107,7 @@ CREATE TABLE `pengguna` (
 
 INSERT INTO `pengguna` (`id`, `nama`, `email`, `notlp`, `kodekota`, `alamat`) VALUES
 (1, 'Ucoks BABA', 'ucok@ucok.com', 82278756, 'SLO', 'Jl Bojong Soang'),
-(3, 'Faisal Ridwan Siregar', 'faisalridwansiregar@gmail.com', 2147483647, 'JKT', 'Jl Bojong Soang'),
-(4, 'hana', 'hana@g.c', 899999, 'SLO', '21121');
+(3, 'Faisal Ridwan', 'me@faisalridwan.com', 2147483647, 'JKT', 'Jl Bojong Soang');
 
 -- --------------------------------------------------------
 
@@ -149,7 +147,7 @@ CREATE TABLE `transaksi` (
   `tglpengiriman` varchar(20) NOT NULL,
   `namapenerima` varchar(20) NOT NULL,
   `tglpenerimaan` varchar(30) NOT NULL,
-  `status` varchar(20) NOT NULL
+  `status` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -157,10 +155,9 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`noresi`, `idlayanan`, `asal`, `tujuan`, `pengirim`, `tglpengiriman`, `namapenerima`, `tglpenerimaan`, `status`) VALUES
-(12, 1, '12', '12', '12', '12', '', '', 'SHIPMENT RECEIVED'),
-(123123, 2, '1231', '123', '123', '123', '12312', '', 'ON TRANSIT'),
-(1212121212, 1, 'BDG', 'BDG', '21', '12', '', '', 'SHIPMENT RECEIVED'),
-(1212312323, 1, 'BDG', 'SLO', 'asas', '2019-04-18', '', '', 'SHIPMENT RECEIVED');
+(10000123, 1, 'BDG', 'JKT', 'Faisal', '2019-04-24', '', '', 'SHIPMENT PICKED'),
+(10000124, 3, 'SLO', 'JKT', 'Sasuke', '2019-04-06', '', '', 'WITH DELIVERY COURIER'),
+(110001234, 4, 'BDG', 'BDG', 'Naruto', '2019-04-06', 'Sakura', '2019-04-24', 'DELIVERED');
 
 --
 -- Indexes for dumped tables
@@ -173,6 +170,12 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`idadmin`),
   ADD UNIQUE KEY `useradmin` (`useradmin`),
   ADD UNIQUE KEY `useradmin_2` (`useradmin`);
+
+--
+-- Indeks untuk tabel `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`idcontact`);
 
 --
 -- Indeks untuk tabel `kota`
@@ -208,13 +211,19 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `idadmin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `idadmin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT untuk tabel `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `idcontact` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengiriman`
