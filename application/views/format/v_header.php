@@ -47,9 +47,9 @@
                         <li class="nav-item <?php if ($header == 6){ ?> active <?php } ?>" >
                             <a class="nav-link" href="<?= base_url('Sicepat/contact'); ?>">CONTACT </a>
                         </li>
-                        <li class="nav-item <?php if ($header == 7){ ?> active <?php } ?>" >
+                        <!-- <li class="nav-item <?php if ($header == 7){ ?> active <?php } ?>" >
                             <a class="nav-link" href="<?= base_url('admin'); ?>">ADMIN </a>
-                        </li>
+                        </li> -->
                     </ul>
         
             </div>

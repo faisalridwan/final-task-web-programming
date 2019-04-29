@@ -138,13 +138,13 @@
                                 <input type="text" class="form-control"  placeholder="Nama*" name="nama"   required>
                             </div>
                             <div class="form-group pr-5">
-                                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                <input type="email" class="form-control" placeholder="Email*" name="email" required>
                             </div>
                             <div class="form-group pr-5">
-                                <input type="text" class="form-control"  placeholder="No Telepon" name="notlp"  required>
+                                <input type="text" class="form-control"  placeholder="No Telepon*" name="notlp"  required>
                             </div>
                             <div class="form-group pr-5">
-                                <input type="text" class="form-control"  placeholder="Alamat" name="alamat"  required>
+                                <input type="text" class="form-control"  placeholder="Alamat*" name="alamat"  required>
                             </div>
                             <div class="form-group pr-5">
                                 <select class="form-control" id="formGroupExampleInput2" name="kodekota" required>

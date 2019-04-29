@@ -22,7 +22,7 @@
             <div class="container ">
                 <div class="signin-content justify-content-center">
                     <div class="signin-form">
-                        <h2 class="form-title text-center">Sign In Admin</h2>
+                        <h2 class="form-title text-center">Log In Admin</h2>
 
                         <?php
                             if(isset($_SESSION['falselogin'])) {

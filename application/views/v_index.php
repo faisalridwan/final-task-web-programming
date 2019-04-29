@@ -239,7 +239,7 @@
 
                     <div class="row text-right">
                         <div class="col-md-12">
-                            <a id="btn-track" name="btn-track" class=" btn btn-track" href="javascript:void(0)">Lacak</a>
+                            <a id="btn-track" name="btn-track" class=" btn btn-track" href="<?= base_url('Sicepat/cekresi') ?>">Lacak</a>
                         </div>
                     </div>
                 </div>
